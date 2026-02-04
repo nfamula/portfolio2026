@@ -1,9 +1,20 @@
+import Link from 'next/link'
+
 export default function HomePage() {
   return (
-    <div className="p-10">
-      <h1 className="text-5xl text-blue-500 font-bold">
-        Hello World
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white p-10">
+      <h1 className="text-5xl font-bold text-gray-800 mb-6">
+        Lorem Ipsum
       </h1>
+      <p className="text-lg text-gray-600 mb-8 text-center max-w-xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+      </p>
+
+      <Link href="/full-portfolio">
+        <button className="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition">
+          View Full Portfolio
+        </button>
+      </Link>
     </div>
   )
 }
