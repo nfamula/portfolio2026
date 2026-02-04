@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       {/* todo: header */}
       <body>
-        <div id="root">{children}</div>
+       <div id="app-root">{children}</div>
       </body>
       {/* todo: footer */}
     </html>
