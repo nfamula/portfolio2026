@@ -4,7 +4,8 @@ export default function FullPortfolioPage() {
       <h1 className="text-4xl font-bold text-purple-600 mb-8">
         Full Portfolio - grid layout for now
       </h1>
-
+        {/* todo: certifcations, skills, interests, projects */}
+        {/* todo: blog: pull from substack */}
       <p className="text-gray-700 text-lg mb-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>

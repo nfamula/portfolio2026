@@ -1,6 +1,7 @@
 'use client'
-import AnimatedCard from './components/animatedCard'
+
 import Link from "next/link"
+import AnimatedCard from './components/animatedCard'
 
 export default function NotFound() {
   return (

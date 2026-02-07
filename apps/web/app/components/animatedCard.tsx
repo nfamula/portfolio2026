@@ -1,8 +1,6 @@
 'use client'
-import dynamic from 'next/dynamic'
+import Lottie from 'lottie-react'
 import LottieRobot from '../../public/lottie/lottie-robot.json';
-
-const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 export default function AnimatedCard() {
   return (
