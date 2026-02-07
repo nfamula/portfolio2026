@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function HomePage() {
   return (
-    <main className="bg-violet-50 text-slate-900 p-12 rounded-lg flex flex-col items-center gap-8 min-h-[calc(100vh-9rem)]">
+    <main className="bg-violet-100 text-slate-900 p-12 rounded-lg flex flex-col items-center gap-8 min-h-[calc(100vh-9rem)]">
       <h1 className="text-5xl font-sans text-slate-900">
         Natalie Famula
       </h1>
