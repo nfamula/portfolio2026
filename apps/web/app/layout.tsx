@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className="bg-violet-50">
+      <body className="bg-violet-100">
         <header className="bg-slate-900 text-white p-6 font-sans">
           <ul className="flex gap-6">  
             <li>Download Resume</li>

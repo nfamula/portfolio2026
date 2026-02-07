@@ -27,7 +27,7 @@ export default function FullPortfolioPage() {
           <p className="mt-2 text-slate-600 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
-        <div className="p-6 bg-violet-50 rounded-lg shadow hover:shadow-lg transition">
+        <div className="p-6 bg-violet-100 rounded-lg shadow hover:shadow-lg transition">
           <h2 className="text-2xl font-semibold font-sans">Project 4</h2>
           <p className="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
