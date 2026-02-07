@@ -7,7 +7,7 @@ export default function HomePage() {
         Natalie Famula
       </h1>
       <p className="text-slate-900 text-lg font-serif max-w-xl justify-center text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        I build websites and tools that help teams work smarter and projects succeed, with 10 years of experience delivering solutions across various industries. I'm open to new opportunities and collaborations, so feel free to reach out to connect or learn more about my work.
       </p>
       <div className="flex gap-6 justify-center">
         <Link 
