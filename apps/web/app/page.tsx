@@ -16,7 +16,13 @@ export default function HomePage() {
         >
         View Full Portfolio
         </Link>
-        <p className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition">Download Resume PDF</p>
+        <Link 
+          href="/NatalieFamula_Resume.pdf"
+          download="NatalieFamula_Resume.pdf"
+          className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
+        >
+          Download Resume PDF
+        </Link>
       </div>
     </main>
   )

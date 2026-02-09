@@ -1,5 +1,6 @@
 import { Lexend, Zilla_Slab } from 'next/font/google'
 import './globals.css'
+import Link from 'next/link'
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -30,14 +31,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="bg-slate-900 text-white p-6 font-sans">
           <ul className="flex gap-6">  
-            <li>Download Resume</li>
-            <li><a href="/full-portfolio">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link href="/NatalieFamula_Resume.pdf" download="NatalieFamula_Resume.pdf">Download Resume</Link></li>
+            <li><Link href="/full-portfolio">Projects</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
           </ul>
         </header>
         <div id="app-root">{children}</div>
         <footer className="bg-slate-900 text-white p-6 font-sans">
-          <p className='flex gap-6'>© 2026 <a href="mailto:nfamula@gmail.com" className="hover:underline">nfamula@gmail.com</a> <a href="https://www.linkedin.com/in/nataliefamula/" className="hover:underline">LinkedIn</a> <a href="https://github.com/nfamula" className="hover:underline">GitHub</a></p>
+          <p className='flex gap-6'>© 2026 <Link href="mailto:nfamula@gmail.com" className="hover:underline">nfamula@gmail.com</Link> <Link href="https://www.linkedin.com/in/nataliefamula/" className="hover:underline">LinkedIn</Link> <Link href="https://github.com/nfamula" className="hover:underline">GitHub</Link></p>
         </footer>
       </body>
     </html>

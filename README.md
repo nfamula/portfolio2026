@@ -1,6 +1,6 @@
 # Portfolio2026
 
-A **Next.js 14 + Tailwind CSS 4** personal portfolio showcasing web development projects, professional experience, and design skills. 
+A **Next.js 14 + Tailwind CSS 4** personal portfolio showcasing web development projects, professional experience, and my personal design taste. 
 This project is designed for learning and inspiration, and you can use it as a reference.
 
 However, please don't pretend my projects were yours, and remove the screenshots and information about me.

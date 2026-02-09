@@ -1,6 +1,6 @@
 export default function FullPortfolioPage() {
   return (
-    <main className="min-h-screen p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
+    <main className="p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
       <h1 className="text-4xl font-bold text-slate-900 mb-8 font-sans">
         Full Portfolio - grid layout for now
       </h1>
