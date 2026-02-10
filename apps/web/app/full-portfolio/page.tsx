@@ -1,3 +1,5 @@
+"use client"
+
 import ProjectCard from '../components/project/Card';
 import { cardDetails } from '../data/projectCardsData';
 

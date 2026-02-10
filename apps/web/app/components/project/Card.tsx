@@ -1,3 +1,6 @@
+"use client" //needed for lightbox
+
+import {useState} from "react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -10,14 +13,12 @@ type ProjectCardProps = {
 }
 
 export default function ProjectCard({ content, more, projectLink, screenshotBase, title }: ProjectCardProps) {
+  const [open, setOpen] = useState(false)
+
   return (
-    // todo: add logos
-    // todo: add tags
-    // todo: add badges for tech stack 
-    // ongoing: add more projects as they are completed
-    //todo: screenshots add a screenshot at top of card, when clicked expand to show a collage of 4 screenshots in lightbox
+  //add lightbox
   <div className="group bg-white rounded-lg shadow transition-all duration-300">
-    <div className="relative w-full h-57 rounded-t-lg overflow-hidden">
+    <div onClick={() => setOpen(true)} className="cursor-pointer relative w-full h-57 rounded-t-lg overflow-hidden">
       <Image 
         src={`/images/${screenshotBase}_screenshot.png`} 
         alt={`${title} screenshot`}
@@ -48,6 +49,62 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
     ">
       {more}
     </div>
+      {/* Lightbox opens when click image, click anywhere to close*/}
+      {open && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-violet-100/50 backdrop-blur-sm"
+          onClick={() => setOpen(false)}
+        >
+        <div className="relative w-full max-w-8xl p-4">
+          {/* Collage layout */}
+          <div className="grid h-[95vh] grid-cols-[1fr_2fr_1fr] gap-3 rounded-xl bg-black/40 p-4 shadow-2xl">
+            {/* Left */}
+            <div className="relative rounded-lg overflow-hidden">
+              <Image
+                src={`/images/${screenshotBase}_screenshot1.png`}
+                alt="project screenshot"
+                fill
+                className="object-contain"
+                quality={100}
+              />
+            </div>
+
+            {/* Center stack */}
+            <div className="grid grid-rows-2 gap-3">
+              <div className="relative rounded-lg overflow-hidden">
+                <Image
+                  src={`/images/${screenshotBase}_screenshot.png`}
+                  alt="project screenshot"
+                  fill
+                  className="object-cover"
+                  quality={100}
+                />
+              </div>
+              <div className="relative rounded-lg overflow-hidden">
+                <Image
+                  src={`/images/${screenshotBase}_screenshot3.png`}
+                  alt="project screenshot"
+                  fill
+                  className="object-cover"
+                  quality={100}
+                />
+              </div>
+            </div>
+
+            {/* Right */}
+            <div className="relative rounded-lg overflow-hidden">
+              <Image
+                src={`/images/${screenshotBase}_screenshot2.png`}
+                alt="project screenshot"
+                fill
+                className="object-contain"
+                quality={100}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
   </div>
   )
 }
