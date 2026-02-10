@@ -1,5 +1,4 @@
 import Link from 'next/link'
-export const dynamic = 'force-dynamic' // deployment workadround 
 
 export default function HomePage() {
   return (
