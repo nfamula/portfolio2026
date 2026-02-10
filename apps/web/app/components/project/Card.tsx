@@ -16,14 +16,13 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
   const [open, setOpen] = useState(false)
 
   return (
-  //add lightbox
   <div className="group bg-white rounded-lg shadow transition-all duration-300">
-    <div onClick={() => setOpen(true)} className="cursor-pointer relative w-full h-57 rounded-t-lg overflow-hidden">
+    <div onClick={() => setOpen(true)} className="md:cursor-pointer relative w-full h-57 rounded-t-lg overflow-hidden">
       <Image 
         src={`/images/${screenshotBase}_screenshot.png`} 
         alt={`${title} screenshot`}
         fill
-        className="object-cover"
+        className="object-cover group-hover:scale-105 transition-transform duration-300"
         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
         quality={100}
       />
@@ -49,15 +48,16 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
     ">
       {more}
     </div>
-      {/* Lightbox opens when click image, click anywhere to close*/}
+      {/* Lightbox opens when click image, click anywhere to close. Disabled on small screens. */}
       {open && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-violet-100/50 backdrop-blur-sm"
+          className="hidden md:flex fixed inset-0 z-50 items-center justify-center bg-violet-100/50 backdrop-blur-sm"
           onClick={() => setOpen(false)}
         >
         <div className="relative w-full max-w-8xl p-4">
           {/* Collage layout */}
-          <div className="grid h-[95vh] grid-cols-[1fr_2fr_1fr] gap-3 rounded-xl bg-black/40 p-4 shadow-2xl">
+          <div className="grid h-[95vh] gap-3 rounded-xl bg-black/40 p-4 shadow-2xl
+          grid-cols-1 md:grid-cols-[1fr_2fr_1fr] flex-1">
             {/* Left */}
             <div className="relative overflow-hidden flex items-center justify-center">
               <Image
@@ -70,7 +70,7 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
             </div>
 
             {/* Center stack */}
-            <div className="grid grid-rows-2 gap-3">
+            <div className="hidden md:grid grid-rows-2 gap-3">
               <div className="relative overflow-hidden">
                 <Image
                   src={`/images/${screenshotBase}_screenshot.png`}
@@ -92,7 +92,7 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
             </div>
 
             {/* Right */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden flex items-center justify-center">
               <Image
                 src={`/images/${screenshotBase}_screenshot2.png`}
                 alt="project screenshot"
