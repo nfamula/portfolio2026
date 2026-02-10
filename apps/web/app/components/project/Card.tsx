@@ -22,8 +22,10 @@ export default function ProjectCard({ title, content, more, projectLink }: Proje
     <div className="p-6">
       <h2 className="text-2xl font-semibold">{title}</h2>
       <p className="mt-2 text-slate-600">{content}</p>
-      { projectLink?.trim() && (
+      { projectLink?.trim() ? (
         <Link href={projectLink} target="_blank" className="text-violet-700 hover:underline">Visit Project</Link>
+      ) : (
+        <span><br /></span>
       )}
     </div>
       <div className="flex items-center text-slate-600 text-2xl mt-2 text-center justify-center cursor-pointer group-hover:text-slate-600 transition-colors duration-300">
