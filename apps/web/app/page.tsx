@@ -14,14 +14,14 @@ export default function HomePage() {
           href="/full-portfolio"
           className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
         >
-        View Full Portfolio
+          Projects
         </Link>
         <Link 
           href="/NatalieFamula_Resume.pdf"
           download="NatalieFamula_Resume.pdf"
           className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
         >
-          Download Resume PDF
+          Resume
         </Link>
       </div>
     </main>
