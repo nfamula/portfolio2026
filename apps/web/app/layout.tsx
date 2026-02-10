@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         <div id="app-root">{children}</div>
         <footer className="bg-slate-900 text-white p-6 font-sans">
-          <p className='flex gap-6'>© 2026 <Link href="mailto:nfamula@gmail.com" className="hover:underline">nfamula@gmail.com</Link> <Link href="https://www.linkedin.com/in/nataliefamula/" className="hover:underline">LinkedIn</Link> <Link href="https://github.com/nfamula" className="hover:underline">GitHub</Link></p>
+          <p className='flex gap-6'>© 2026 | coded in Toronto with next.js <Link href="mailto:nfamula@gmail.com" className="hover:underline">nfamula@gmail.com</Link> <Link href="https://www.linkedin.com/in/nataliefamula/" className="hover:underline">LinkedIn</Link> <Link href="https://github.com/nfamula" className="hover:underline">GitHub</Link></p>
         </footer>
       </body>
     </html>
