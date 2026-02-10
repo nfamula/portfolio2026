@@ -1,23 +1,20 @@
 import Link from "next/link"
 
 type ProjectCardProps = {
-  title: string
   content: string
   more: string
   projectLink?: string
+  screenshotBase: string
+  title: string
 }
 
-export default function ProjectCard({ title, content, more, projectLink }: ProjectCardProps) {
+export default function ProjectCard({ content, more, projectLink, screenshotBase, title }: ProjectCardProps) {
   return (
     // todo: add logos
     // todo: add tags
     // todo: add badges for tech stack 
     // ongoing: add more projects as they are completed
-    // todo: add links to github if relevant
-    // todo: add link (if applicable some are too old)
-
-  //todo: add slider with images at the top of each card, four images each use slider.js library
-    //lazy load next/image for the images in the slider
+    //todo: screenshots add a screenshot at top of card, when clicked expand to show a collage of 4 screenshots in lightbox
   <div className="group bg-violet-50 rounded-lg shadow transition-all duration-300">
     <div className="p-6">
       <h2 className="text-2xl font-semibold">{title}</h2>
