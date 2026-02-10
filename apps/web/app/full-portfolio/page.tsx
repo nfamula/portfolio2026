@@ -17,7 +17,8 @@ export default function FullPortfolioPage() {
           <ProjectCard 
             key={projectCardData.id} 
             title={projectCardData.title} 
-            content={projectCardData.content} 
+            content={projectCardData.content}
+            projectLink={projectCardData.projectLink}
             more={projectCardData.more}
           />
         ))}
