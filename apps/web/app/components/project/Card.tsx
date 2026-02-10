@@ -59,7 +59,7 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
           {/* Collage layout */}
           <div className="grid h-[95vh] grid-cols-[1fr_2fr_1fr] gap-3 rounded-xl bg-black/40 p-4 shadow-2xl">
             {/* Left */}
-            <div className="relative rounded-lg overflow-hidden">
+            <div className="relative overflow-hidden flex items-center justify-center">
               <Image
                 src={`/images/${screenshotBase}_screenshot1.png`}
                 alt="project screenshot"
@@ -71,7 +71,7 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
 
             {/* Center stack */}
             <div className="grid grid-rows-2 gap-3">
-              <div className="relative rounded-lg overflow-hidden">
+              <div className="relative overflow-hidden">
                 <Image
                   src={`/images/${screenshotBase}_screenshot.png`}
                   alt="project screenshot"
@@ -80,7 +80,7 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
                   quality={100}
                 />
               </div>
-              <div className="relative rounded-lg overflow-hidden">
+              <div className="relative overflow-hidden">
                 <Image
                   src={`/images/${screenshotBase}_screenshot3.png`}
                   alt="project screenshot"
@@ -92,13 +92,12 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
             </div>
 
             {/* Right */}
-            <div className="relative rounded-lg overflow-hidden">
+            <div className="relative overflow-hidden">
               <Image
                 src={`/images/${screenshotBase}_screenshot2.png`}
                 alt="project screenshot"
                 fill
                 className="object-contain"
-                quality={100}
               />
             </div>
           </div>
