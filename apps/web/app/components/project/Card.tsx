@@ -26,7 +26,7 @@ export default function ProjectCard({ title, content, more, projectLink }: Proje
         <Link href={projectLink} target="_blank" className="text-violet-700 hover:underline">Visit Project</Link>
       )}
     </div>
-      <div className="flex items-center text-slate-400 text-2xl mt-2 text-center justify-center cursor-pointer group-hover:text-slate-600 transition-colors duration-300">
+      <div className="flex items-center text-slate-600 text-2xl mt-2 text-center justify-center cursor-pointer group-hover:text-slate-600 transition-colors duration-300">
         <span className="ml-1 transition-transform duration-300 group-hover:rotate-45">+</span>
       </div>
     <div className="
