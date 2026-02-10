@@ -16,7 +16,7 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
     // todo: add badges for tech stack 
     // ongoing: add more projects as they are completed
     //todo: screenshots add a screenshot at top of card, when clicked expand to show a collage of 4 screenshots in lightbox
-  <div className="group bg-violet-50 rounded-lg shadow transition-all duration-300">
+  <div className="group bg-white rounded-lg shadow transition-all duration-300">
     <div className="relative w-full h-48 rounded-t-lg overflow-hidden">
       <Image 
         src={`/images/${screenshotBase}_screenshot.png`} 
