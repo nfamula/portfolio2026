@@ -1,4 +1,10 @@
-export default function ProjectCard({ title, content }: { title: string, content: string }) {
+type ProjectCardProps = {
+  title: string
+  content: string
+  more: string
+}
+
+export default function ProjectCard({ title, content, more }: ProjectCardProps) {
   return (
     // todo: add logos 
     // todo: add tags
@@ -7,10 +13,23 @@ export default function ProjectCard({ title, content }: { title: string, content
     // todo: add links to github if relevant
     // todo: add ink (if apploicable some are too old)
     // todo: show screenshot on hover
-    <div className="p-6 bg-violet-50 rounded-lg shadow hover:shadow-lg transition">
-      <h2 className="text-2xl font-semibold font-sans">{title}</h2>
-      <p className="mt-2 text-slate-600 font-serif">{content}</p>
+  <div className="group bg-violet-50 rounded-lg shadow transition-all duration-300">
+    <div className="p-6">
+      <h2 className="text-2xl font-semibold">{title}</h2>
+      <p className="mt-2 text-slate-600">{content}</p>
     </div>
-    //todo: add "more" drawer for details
+      <div className="flex items-center text-slate-400 text-2xl mt-2 text-center justify-center cursor-pointer group-hover:text-slate-600 transition-colors duration-300">
+        <span className="ml-1 transition-transform duration-300 group-hover:rotate-45">+</span>
+      </div>
+    <div className="
+      mt-4 mb-4 text-slate-600 font-serif whitespace-pre-line px-4
+      overflow-auto
+      max-h-full
+      md:max-h-0 md:overflow-hidden md:group-hover:max-h-500
+      transition-all duration-300
+    ">
+      {more}
+    </div>
+  </div>
   )
 }

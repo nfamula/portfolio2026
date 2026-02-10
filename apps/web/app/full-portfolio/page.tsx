@@ -18,6 +18,7 @@ export default function FullPortfolioPage() {
             key={projectCardData.id} 
             title={projectCardData.title} 
             content={projectCardData.content} 
+            more={projectCardData.more}
           />
         ))}
       </div>
