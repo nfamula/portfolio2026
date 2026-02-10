@@ -19,6 +19,7 @@ export default function ContactPage() {
             <li>Email: <a href="mailto:nfamula@gmail.com" className="text-slate-700 hover:underline">nfamula@gmail.com</a></li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/nataliefamula/" className="text-slate-700 hover:underline">linkedin.com/in/nataliefamula</a></li>
             <li>GitHub: <a href="https://github.com/nfamula" className="text-slate-700 hover:underline">@nfamula</a></li>
+            <li>Located in Toronto, Canada 🇨🇦</li>
         </ul>
       </div>
     </main>
