@@ -20,7 +20,7 @@ export default function FullPortfolioPage() {
             content={projectCardData.content}
             projectLink={projectCardData.projectLink}
             more={projectCardData.more}
-            screenshotBase={projectCardData.screenshot}
+            screenshotBase={projectCardData.screenshotBase}
           />
         ))}
       </div>

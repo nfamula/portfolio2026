@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 type ProjectCardProps = {
   content: string
@@ -16,6 +17,16 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
     // ongoing: add more projects as they are completed
     //todo: screenshots add a screenshot at top of card, when clicked expand to show a collage of 4 screenshots in lightbox
   <div className="group bg-violet-50 rounded-lg shadow transition-all duration-300">
+    <div className="relative w-full h-48 rounded-t-lg overflow-hidden">
+      <Image 
+        src={`/images/${screenshotBase}_screenshot.png`} 
+        alt={`${title} screenshot`}
+        fill
+        className="object-cover"
+        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+        quality={100}
+      />
+    </div>
     <div className="p-6">
       <h2 className="text-2xl font-semibold">{title}</h2>
       <p className="mt-2 text-slate-600">{content}</p>
