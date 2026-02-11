@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ContactPage() {
   return (
-    <main className="p-10 bg-violet-100">
+    <main className="p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
       <h1 className="text-4xl font-bold text-slate-900 mb-8 font-sans text-center">
         Get in Touch - I&apos;d love to hear from you!
       </h1>
