@@ -17,12 +17,12 @@ export default function ProjectCard({ content, more, projectLink, screenshotBase
 
   return (
   <div className="group bg-white rounded-lg shadow transition-all duration-300">
-    <div onClick={() => setOpen(true)} className="md:cursor-pointer relative aspect-[16/9] ml:aspect-[4/3] rounded-t-lg overflow-hidden">
+    <div onClick={() => setOpen(true)} className="md:cursor-pointer relative w-full h-auto aspect-video rounded-t-lg overflow-hidden">
       <Image 
         src={`/images/${screenshotBase}_screenshot.png`} 
         alt={`${title} screenshot`}
         fill
-        className="object-cover group-hover:scale-105 transition-transform duration-300"
+        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
         quality={100}
       />
