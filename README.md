@@ -7,11 +7,11 @@ However, please don't pretend my projects were yours, and remove the screenshots
 
 ## Features
 - Fully responsive layout built with Tailwind CSS 4
-- fonts: Lexend for headings/buttons, Zilla Slab for body text
+- Fonts: Lexend for headings/buttons, Zilla Slab for body text
 - Designed for high readability and accessibility
 - Configured for Next.js 14 App Router with TypeScript
 - Resume download, contact info, and project showcase are easy to find for recruiters.
-- more tbd as I build this out!
+- More tbd as I build this out!
 
 
 ## Getting Started
