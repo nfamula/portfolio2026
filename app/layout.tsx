@@ -19,11 +19,19 @@ const zillaSlab = Zilla_Slab({
 export const metadata = {
   title: 'Natalie Famula - Web Developer Portfolio',
   description: 'Here you will find examples from my professional web development experience, and a demonstration of my coding skills.',
+  icons: {
+    icon: [
+      { url: 'images/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: 'images/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: 'images/favicon.ico' },
+    ],
+    apple: 'images/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${lexend.variable} ${zillaSlab.variable}`}>
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
