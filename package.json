@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "prepare": "husky install",
-    "test": "eslint . --ext .ts,.tsx,.js,.jsx"
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run lint && npm run typecheck",
+    "prepare": "husky install"
   },
   "dependencies": {
     "framer-motion": "^12.34.2",
