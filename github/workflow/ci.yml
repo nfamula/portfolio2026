@@ -17,31 +17,41 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout code
+      # Checkout code
       - uses: actions/checkout@v3
 
-      # 2️⃣ Setup Node.js
+      # Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-        node-version-file: .nvmrc
+          node-version-file: .nvmrc
 
-      # 3️⃣ Install dependencies
+      # Install dependencies
       - name: Install Dependencies
         run: npm ci
 
-      # 4️⃣ Run ESLint
+      # Run ESLint
       - name: Lint
         run: npm run lint
 
-      # 5️⃣ Run TypeScript typecheck
+      # Run TypeScript typecheck
       - name: Typecheck
         run: npm run typecheck
 
-      # 6️⃣ Run tests (if you have any)
+      # Run tests 
       - name: Tests
         run: npm test
 
-      # 7️⃣ Optional: Copilot suggestion reminder
+      # Trigger Vercel deployment on main or staging branches
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v22
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: .
+          prod: ${{ github.ref_name == 'main' }}
+
+      # Copilot suggestion reminder
       - name: AI Review Reminder
         run: echo "Use GitHub Copilot in VS Code to review code locally before merging. Copilot will suggest fixes, refactors, and improvements."

@@ -50,16 +50,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Workflow for using staging
+## Workflow 
+Work on a feature branch → push → CI runs, Vercel preview deploys
 
-Develop on feature branches:
+Open PR → Copilot suggests improvements in VS Code
 
-git checkout -b feature/new-feature
+Merge to staging → preview URL deployed automatically
 
-Push branch → Vercel automatically creates a Preview Deployment
-
-Merge into staging → triggers your staging environment
-
-QA/test everything in staging
-
-Merge staging into main → deploys to production
+Merge to main → production deployed automatically
