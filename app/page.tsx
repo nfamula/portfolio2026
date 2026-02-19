@@ -61,6 +61,20 @@ export default function HomePage() {
           />
         </a>
       </div>
+      <div className="flex gap-6 justify-center">
+        <p className="text-center font-serif text-slate-700">
+          {" "}
+          view{" "}
+          <a
+            href="https://github.com/nfamula/portfolio2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            codebase
+          </a>
+        </p>
+      </div>
     </main>
   );
 }
