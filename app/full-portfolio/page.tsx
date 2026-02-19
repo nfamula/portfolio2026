@@ -28,6 +28,7 @@ export default function FullPortfolioPage() {
             key={projectCardData.id}
             title={projectCardData.title}
             content={projectCardData.content}
+            badgesImage={projectCardData.badgesImage}
             projectLink={projectCardData.projectLink}
             more={projectCardData.more}
             screenshotBase={projectCardData.screenshotBase}

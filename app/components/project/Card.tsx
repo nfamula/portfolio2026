@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 type ProjectCardProps = {
+  badgesImage: string;
   content: string;
   more: string;
   projectLink?: string;
@@ -13,6 +14,7 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard({
+  badgesImage,
   content,
   more,
   projectLink,
@@ -46,6 +48,15 @@ export default function ProjectCard({
       </div>
       <div className="p-6">
         <h2 className="text-2xl font-semibold">{title}</h2>
+        <div className="mt-4 flex">
+          <Image
+            src={badgesImage}
+            alt={`${title}`}
+            width={200}
+            height={50}
+            className="object-contain"
+          />
+        </div>
         <p className="mt-2 text-slate-600">{content}</p>
         {projectLink?.trim() ? (
           <Link

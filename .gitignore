@@ -7,3 +7,6 @@ npm-debug.log
 .next/
 out/
 build/
+
+# Typescript
+*.tsbuildinfo
