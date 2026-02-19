@@ -19,13 +19,13 @@ export default function HomePage() {
         >
           Projects
         </Link>
-        <Link
-          href="downloads/NatalieFamula_Resume.pdf"
+        <a
+          href="/downloads/NatalieFamula_Resume.pdf"
           download="NatalieFamula_Resume.pdf"
           className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
         >
           Resume
-        </Link>
+        </a>
       </div>
     </main>
   );
