@@ -5,6 +5,7 @@ export const cardDetails = [
     screenshotBase: "Prodigy",
     content: "Full-time developer role in EdTech.",
     projectLink: "https://www.prodigygame.com/main-en",
+    badgesImage: "/images/skill-badges/prodigy-stack-icons.svg",
     more: "I was brought on as the website was newly completed in 2020. I maintained a GitHub repo of Gatsby.js (React) components, AWS lambda middleware, Prismic CMS and became the primary developer for the project.\n\nI worked with UX designers to deliver features based on Figma designs, following the SCRUM agile framework and JIRA. I delivered self-serve tools to unblock the team, OneTrust integration, and ran a monthly lunch and learn program.\n\n In 2025, I supported the website migration to Webflow while maintaining the existing website. I also shipped a custom Shopify website for homeschooling parents. December 2020 - January 2026",
   },
   {
@@ -13,6 +14,7 @@ export const cardDetails = [
     screenshotBase: "WhittenFamula",
     projectLink: "https://whittenfamulamediations.com/",
     content: "Legal services project completed end-to-end.",
+    badgesImage: "/images/skill-badges/wordpress-stack-icons.svg",
     more: "Independent project for Wordpress website (PHP, HTML, CSS, JS) customization and implementation for legal services. SEO tools, plugins and training documentation provided. \n\n Completed January 2024.",
   },
   {
@@ -20,6 +22,7 @@ export const cardDetails = [
     title: "Finance It",
     screenshotBase: "financeit",
     content: "Full-time developer role in Fintech.",
+    badgesImage: "/images/skill-badges/financeit-stack-icons.svg",
     more: "Sole developer for digital marketing materials. I completed the WordPress build and shipped the website. Financeit.io is a custom WordPress theme based on unique designs. \n\n It contained over 150 pages, custom Salesforce integration, Pardot form handlers for drip email campaigns, and enterprise partner landing pages. \n\n I created a static microsite for an enterprise partnership, gated content landing pages, research for moving to headless CMS with Gatsby(React.js), contributed to an Ember.js app, and AODA accessibility testing. November 2018 - April 2020.",
   },
   {
@@ -28,6 +31,7 @@ export const cardDetails = [
     screenshotBase: "bmmp",
     projectLink: "https://www.blackmarketmealprep.com/",
     content: "Custom WooCommerce shop project with a small team.",
+    badgesImage: "/images/skill-badges/bmmp-stack-icons.svg",
     more: "End-to-end delivery of fully custom WooCommerce shop project with one other developer. Custom WordPress/WooCommerce theme with custom meal packs and meal deals. This website refresh doubled the client's revenue. \n\nMy role focused mainly on shop functionality and adding custom features in php templates. Deployed from the development environment to a permanent URL with CPanel. Worked on the development server with FileZilla as FTP client, used Trello for project management. Built with PHP (WordPress), HTML5, CSS3, JavaScript. \n\nAugust - October 2017. Contracted again to implement a rebrand in 2020.",
   },
   {
@@ -35,6 +39,7 @@ export const cardDetails = [
     title: "One at Windermere",
     screenshotBase: "Windermere",
     content: "Creative agency Wordpress Website for real estate.",
+    badgesImage: "/images/skill-badges/wordpress-stack-icons.svg",
     more: "Custom WordPress theme with reusable templates for pages, and uploaded content from Photoshop files. Worked on the development server with FileZilla as FTP client, used Airtable for project management. Deployed from the development environment to a permanent URL with CPanel. Built with PHP (WordPress), HTML5, CSS3, JavaScript, jQuery. \n\nBuilt for Giants & Gentleman creative agency in 2017. ",
   },
   {
@@ -42,6 +47,7 @@ export const cardDetails = [
     title: "Live in Prescott",
     screenshotBase: "Prescott",
     content: "Creative agency Wordpress Website for real estate.",
+    badgesImage: "/images/skill-badges/wordpress-stack-icons.svg",
     more: "Developed Wordpress theme with jQuery drop down content sections, and uploaded content from designer's Photoshop files. Worked on the development server with FileZilla as FTP client, used Airtable for project management. Built with PHP (WordPress), HTML5, CSS3, JavaScript, jQuery. \n\nBuilt for Giants & Gentleman creative agency in 2017.",
   },
   {
@@ -49,6 +55,7 @@ export const cardDetails = [
     title: "Duke’s Refresher",
     screenshotBase: "Dukes",
     content: "Creative agency Wordpress website for restaurant.",
+    badgesImage: "/images/skill-badges/wordpress-stack-icons.svg",
     more: "Assisted senior developer in developing a custom WordPress theme. Uploaded and edited content for all restaurant menu items. Manually installed WordPress plugins. Built with PHP (WordPress), HTML5, CSS3, JavaScript, jQuery.\n\n Built for Giants & Gentleman creative agency in 2017.",
   },
   {
@@ -56,6 +63,7 @@ export const cardDetails = [
     title: "Prefab Dry Wall",
     screenshotBase: "Prefab",
     content: "Customized WordPress website for drywall company.",
+    badgesImage: "/images/skill-badges/wordpress-stack-icons.svg",
     more: "Customized themeforest wordpress theme using CSS3 and HTML5, based on mock-ups. Created content as per the client's specifications. Populated the theme with content and delivered with a quick turnaround. \n\nFreelance website project in 2016.",
   },
   {
@@ -64,6 +72,7 @@ export const cardDetails = [
     screenshotBase: "TrendReport",
     projectLink: "https://github.com/nfamula/trend-report",
     content: "Full-stack app with Ruby backend.",
+    badgesImage: "/images/skill-badges/trend-report-stack-icons.svg",
     more: "Trend Report is a web application that scrapes trendy blogs and websites and provides articles from different categories, including food and fashion. The purpose of this app is to allow a user to access articles related to a certain category without having to visit each blog or website. \n\n What I learned: how to work with a Bootstrap-based theme, the importance of mobile optimizations, and you definitely shouldn't use a hard-coded web-scraper 'cause it won't ever scrape again after deployment (background workers would have been a better choice). \n\n\ This project was built using Ruby, Ruby on Rails, PostgreSQL, HTML5, CSS3 and jQuery, with Lighthouse Labs classmate as our final project in 2016.",
   },
 ];
