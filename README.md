@@ -53,7 +53,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Workflow 
 Work on a feature branch → push → CI runs, Vercel preview deploys
 
-Open PR → Copilot suggests improvements in VS Code
+Open PR → reviewdog suggests improvements in VS Code
 
 Merge to staging → preview URL deployed automatically
 
