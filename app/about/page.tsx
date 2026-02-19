@@ -8,9 +8,9 @@ export default function AboutPage() {
       </h1>
       <p className="text-slate-700 text-lg mb-6 font-serif">
         A decade in tech has taught me that{" "}
-        <b>collaboration is as important as code</b>. The best projects are not
-        just well-architected. They are well understood, well shared, and well
-        supported by the people who build and use them.
+        <strong>collaboration is as important as code</strong>. The best
+        projects are not just well-architected. They are well understood, well
+        shared, and well supported by the people who build and use them.
       </p>
       <p className="text-slate-700 text-lg mb-6 font-serif">
         I&apos;ve always been drawn to the spaces between disciplines, teaching
@@ -37,9 +37,9 @@ export default function AboutPage() {
       </p>
       <p className="text-slate-700 text-lg mb-6 font-serif">
         Outside of my development work, I am currently working toward a DevOps
-        certificate at the <b>University of Toronto</b> and training for the
-        Toronto marathon. Both keep me honest about discipline, endurance, and
-        the value of steady progress.
+        certificate at the <strong>University of Toronto</strong> and training
+        for the Toronto marathon. Both keep me honest about discipline,
+        endurance, and the value of steady progress.
       </p>
       <p className="text-slate-700 text-lg mb-6 font-serif">
         Whether you have a project in mind, want to collaborate, or just want to
