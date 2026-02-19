@@ -38,15 +38,6 @@ jobs:
           fail_on_error: true
           filter_mode: added
 
-      - name: Prettier
-        uses: reviewdog/action-prettier@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
-          prettier_flags: "--check ."
-          fail_on_error: false
-          filter_mode: added
-
       - name: Lint + Typecheck + Tests
         id: lint-test
         run: npm test

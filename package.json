@@ -9,9 +9,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "typecheck": "tsc --noEmit",
     "test": "npm run lint && npm run typecheck",
-    "prepare": "husky install",
-    "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "prepare": "husky install"
   },
   "dependencies": {
     "framer-motion": "^12.34.2",
