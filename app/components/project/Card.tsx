@@ -26,6 +26,14 @@ export default function ProjectCard({
       <div
         onClick={() => setOpen(true)}
         className="md:cursor-pointer relative w-full h-auto aspect-video rounded-t-lg overflow-hidden"
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setOpen(true);
+          }
+        }}
+        role="button"
+        tabIndex={0}
       >
         <Image
           src={`/images/${screenshotBase}_screenshot.png`}
@@ -40,7 +48,12 @@ export default function ProjectCard({
         <h2 className="text-2xl font-semibold">{title}</h2>
         <p className="mt-2 text-slate-600">{content}</p>
         {projectLink?.trim() ? (
-          <Link href={projectLink} target="_blank" className="text-violet-700 hover:underline">
+          <Link
+            href={projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-violet-700 hover:underline"
+          >
             Visit Project
           </Link>
         ) : (
@@ -50,7 +63,9 @@ export default function ProjectCard({
         )}
       </div>
       <div className="flex items-center text-slate-600 text-2xl mt-2 text-center justify-center cursor-pointer group-hover:text-slate-600 transition-colors duration-300">
-        <span className="ml-1 transition-transform duration-300 group-hover:rotate-45">+</span>
+        <span className="ml-1 transition-transform duration-300 group-hover:rotate-45">
+          +
+        </span>
       </div>
       <div
         className="
