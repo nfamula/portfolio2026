@@ -15,8 +15,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      ci-pass: ${{ steps.lint-test.outcome == 'success' }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -25,6 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
@@ -39,31 +39,38 @@ jobs:
           filter_mode: added
 
       - name: Lint + Typecheck + Tests
-        id: lint-test
-        run: npm test
+        run: npm run lint && npm run typecheck && npm run test
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ needs.build.result == 'success' }} # only deploy if build passed
+    if: ${{ needs.build.result == 'success' && github.event_name == 'push' }}
+    environment: ${{ github.ref_name == 'main' && 'Production' || '' }}
+
+    concurrency:
+      group: deploy-${{ github.ref }}
+      cancel-in-progress: true
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Node setup again (needed for Vercel Action)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+          cache: 'npm'
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel
 
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v20
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          working-directory: .
-          vercel-args: ${{ github.ref == 'refs/heads/main' && '--prod' || '' }}
-
-      - name: AI Review Reminder
-        run: echo "Use GitHub Copilot in VS Code for AI suggestions before merging."
+        run: |
+          if [ "${{ github.ref_name }}" = "main" ]; then
+            vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+          else
+            vercel --token=${{ secrets.VERCEL_TOKEN }}
+          fi
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
