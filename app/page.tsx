@@ -31,7 +31,7 @@ export default function HomePage() {
       <div className="flex gap-6 justify-center">
         <p className="text-center font-serif text-slate-700">
           Built with <b>Next.js | React.js | JavaScript | TypeScript</b> styled
-          with <b>Tailwind CSS </b>deployed on <b>Vercel</b> and hosted on{" "}
+          with <b>Tailwind CSS </b>deployed on <b>Vercel</b> and hosted on
           <b>GitHub</b>
         </p>
       </div>
@@ -49,7 +49,7 @@ export default function HomePage() {
           alt="CSS and TailwindCSS"
         />
         <Image
-          src="/images/skill-badges/deployment-icons.svg"
+          src="/images/skill-badges/deploy-icons.svg"
           width={200}
           height={50}
           alt="Git, GitHub, GitHub Actions, Vercel"
@@ -57,8 +57,7 @@ export default function HomePage() {
       </div>
       <div className="flex gap-6 justify-center">
         <p className="text-center font-serif text-slate-700">
-          {" "}
-          view{" "}
+          view
           <a
             href="https://github.com/nfamula/portfolio2026"
             target="_blank"
