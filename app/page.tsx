@@ -49,7 +49,7 @@ export default function HomePage() {
           alt="CSS and TailwindCSS"
         />
         <Image
-          src="/images/skill-badges/deploy-icons.svg"
+          src="/images/skill-badges/deployment-icons.svg"
           width={200}
           height={50}
           alt="Git, GitHub, GitHub Actions, Vercel"
