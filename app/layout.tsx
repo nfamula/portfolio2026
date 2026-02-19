@@ -45,12 +45,12 @@ export default function RootLayout({
         <header className="bg-slate-900 text-white p-6 font-sans">
           <ul className="flex gap-6">
             <li>
-              <Link
-                href="downloads/NatalieFamula_Resume.pdf"
+              <a
+                href="/downloads/NatalieFamula_Resume.pdf"
                 download="NatalieFamula_Resume.pdf"
               >
                 Download Resume
-              </Link>
+              </a>
             </li>
             <li>
               <Link href="/full-portfolio">Projects</Link>
