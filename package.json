@@ -9,7 +9,9 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "typecheck": "tsc --noEmit",
     "test": "npm run lint && npm run typecheck",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "framer-motion": "^12.34.2",
@@ -30,6 +32,7 @@
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.6",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "^7.37.5",
     "husky": "^8.0.0",
     "lint-staged": "^16.2.7",

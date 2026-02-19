@@ -30,11 +30,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${lexend.variable} ${zillaSlab.variable}`}>
       <head>
@@ -45,10 +41,7 @@ export default function RootLayout({
         <header className="bg-slate-900 text-white p-6 font-sans">
           <ul className="flex gap-6">
             <li>
-              <a
-                href="/downloads/NatalieFamula_Resume.pdf"
-                download="NatalieFamula_Resume.pdf"
-              >
+              <a href="/downloads/NatalieFamula_Resume.pdf" download="NatalieFamula_Resume.pdf">
                 Download Resume
               </a>
             </li>
@@ -66,25 +59,19 @@ export default function RootLayout({
             <p>© 2026</p>
             <p>coded with next.js</p>
             <p>
-              <Link href="mailto:nfamula@gmail.com" className="hover:underline">
+              <a href="mailto:nfamula@gmail.com" className="hover:underline">
                 nfamula@gmail.com
-              </Link>
+              </a>
             </p>
             <p>
-              <Link
-                href="https://www.linkedin.com/in/nataliefamula/"
-                className="hover:underline"
-              >
+              <a href="https://www.linkedin.com/in/nataliefamula/" className="hover:underline">
                 LinkedIn
-              </Link>
+              </a>
             </p>
             <p>
-              <Link
-                href="https://github.com/nfamula"
-                className="hover:underline"
-              >
+              <a href="https://github.com/nfamula" className="hover:underline">
                 GitHub
-              </Link>
+              </a>
             </p>
           </nav>
         </footer>
