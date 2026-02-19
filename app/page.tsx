@@ -30,9 +30,10 @@ export default function HomePage() {
       </div>
       <div className="flex gap-6 justify-center">
         <p className="text-center font-serif text-slate-700">
-          Built with <b>Next.js | React.js | JavaScript | TypeScript</b> styled
-          with <b>Tailwind CSS </b>deployed on <b>Vercel</b> and hosted on{" "}
-          <b>GitHub</b>
+          Built with{" "}
+          <strong>Next.js | React.js | JavaScript | TypeScript</strong> styled
+          with <strong>Tailwind CSS </strong>deployed on <strong>Vercel</strong>{" "}
+          and hosted on <strong>GitHub</strong>
         </p>
       </div>
       <div className="flex justify-between gap-6 sm:flex-row flex-col items-center">
