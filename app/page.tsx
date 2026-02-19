@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -28,29 +29,34 @@ export default function HomePage() {
         </a>
       </div>
       <div className="flex gap-6 justify-center">
-        <p className="text-center">
-          this project was built with{" "}
-          <b>Next.js | React.js | Javascript | Typescript</b> styled with{" "}
-          <b>Tailwind CSS </b>deployed on <b>Vercel</b> and hosted on{" "}
+        <p className="text-center font-serif text-slate-700">
+          Built with <b>Next.js | React.js | Javascript | Typescript</b> styled
+          with <b>Tailwind CSS </b>deployed on <b>Vercel</b> and hosted on{" "}
           <b>GitHub</b>
         </p>
       </div>
       <div className="flex gap-6 justify-center">
         <a href="https://skillicons.dev">
-          <img
-            src="https://skillicons.dev/icons?i=nextjs,react,javascript,typescript&theme=dark&perline=15"
+          <Image
+            src="/images/skill-badges/JS-icons.svg"
+            width={200}
+            height={50}
             alt="Next.js, React.js, Javascript, Typescript"
           />
         </a>
         <a href="https://skillicons.dev">
-          <img
-            src="https://skillicons.dev/icons?i=css,tailwindcss&theme=dark&perline=15"
+          <Image
+            src="/images/skill-badges/CSS-icons.svg"
+            width={100}
+            height={50}
             alt="CSS and TailwindCSS"
           />
         </a>
         <a href="https://skillicons.dev">
-          <img
-            src="https://skillicons.dev/icons?i=github,githubactions,git,vercel&theme=dark&perline=15"
+          <Image
+            src="/images/skill-badges/deployment-icons.svg"
+            width={200}
+            height={50}
             alt="Git, Github, Github Actions, Vercel"
           />
         </a>
