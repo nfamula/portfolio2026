@@ -39,11 +39,11 @@ jobs:
           filter_mode: added
 
       - name: Prettier
-        uses: reviewdog/action-eslint@v1
+        uses: reviewdog/action-prettier@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
-          eslint_flags: "--plugin prettier --ext .ts,.tsx,.js,.jsx ."
+          prettier_flags: "--check ."
           fail_on_error: false
           filter_mode: added
 
