@@ -1,0 +1,81 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+      - 'feature/**'
+  pull_request:
+    branches:
+      - main
+      - staging
+      - 'feature/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      ci-pass: ${{ steps.lint-test.outcome == 'success' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run ESLint + Reviewdog
+        uses: reviewdog/action-eslint@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          eslint_flags: "--ext .ts,.tsx,.js,.jsx ."
+          fail_on_error: true
+          filter_mode: added
+      
+      - name: Prettier
+        uses: reviewdog/action-eslint@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          eslint_flags: "--plugin prettier --ext .ts,.tsx,.js,.jsx ."
+          fail_on_error: false
+          filter_mode: added
+
+      - name: Lint + Typecheck + Tests
+        id: lint-test
+        run: |
+          npm run lint
+          npm run typecheck
+          npm test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ needs.build.result == 'success' }}  # only deploy if build passed
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Node setup again (needed for Vercel Action)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v22
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: .
+          prod: ${{ github.ref_name == 'main' }}
+
+      - name: AI Review Reminder
+        run: echo "Use GitHub Copilot in VS Code for AI suggestions before merging."
