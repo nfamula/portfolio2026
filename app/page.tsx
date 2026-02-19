@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -7,17 +7,20 @@ export default function HomePage() {
         Natalie Famula
       </h1>
       <p className="text-slate-900 text-lg font-serif max-w-xl justify-center text-center">
-        I build websites and tools that help teams work smarter and projects succeed, with 10 years of experience across various industries. I&apos;m open to new opportunities and collaborations, so feel free to reach out to connect or learn more about my work.
+        I build websites and tools that help teams work smarter and projects
+        succeed, with 10 years of experience across various industries. I&apos;m
+        open to new opportunities and collaborations, so feel free to reach out
+        to connect or learn more about my work.
       </p>
       <div className="flex gap-6 justify-center">
-        <Link 
+        <Link
           href="/full-portfolio"
           className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
         >
           Projects
         </Link>
-        <Link 
-          href="/NatalieFamula_Resume.pdf"
+        <Link
+          href="downloads/NatalieFamula_Resume.pdf"
           download="NatalieFamula_Resume.pdf"
           className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
         >
@@ -25,5 +28,5 @@ export default function HomePage() {
         </Link>
       </div>
     </main>
-  )
+  );
 }
