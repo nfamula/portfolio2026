@@ -36,30 +36,24 @@ export default function HomePage() {
         </p>
       </div>
       <div className="flex gap-6 justify-center">
-        <a href="https://skillicons.dev">
-          <Image
-            src="/images/skill-badges/JS-icons.svg"
-            width={200}
-            height={50}
-            alt="Next.js, React.js, Javascript, Typescript"
-          />
-        </a>
-        <a href="https://skillicons.dev">
-          <Image
-            src="/images/skill-badges/CSS-icons.svg"
-            width={100}
-            height={50}
-            alt="CSS and TailwindCSS"
-          />
-        </a>
-        <a href="https://skillicons.dev">
-          <Image
-            src="/images/skill-badges/deployment-icons.svg"
-            width={200}
-            height={50}
-            alt="Git, Github, Github Actions, Vercel"
-          />
-        </a>
+        <Image
+          src="/images/skill-badges/JS-icons.svg"
+          width={200}
+          height={50}
+          alt="Next.js, React.js, JavaScript, TypeScript"
+        />
+        <Image
+          src="/images/skill-badges/CSS-icons.svg"
+          width={100}
+          height={50}
+          alt="CSS and TailwindCSS"
+        />
+        <Image
+          src="/images/skill-badges/deployment-icons.svg"
+          width={200}
+          height={50}
+          alt="Git, GitHub, GitHub Actions, Vercel"
+        />
       </div>
       <div className="flex gap-6 justify-center">
         <p className="text-center font-serif text-slate-700">
