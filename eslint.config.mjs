@@ -10,7 +10,12 @@ const eslintConfig = defineConfig([
   // Disable ESLint rules that conflict with Prettier
   eslintConfigPrettier,
 
-  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
+  globalIgnores([
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
 ]);
 
 export default eslintConfig;

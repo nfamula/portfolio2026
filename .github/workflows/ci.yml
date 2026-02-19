@@ -63,7 +63,7 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: .
-          prod: ${{ github.ref_name == 'main' }}
+          vercel-args: ${{ github.ref == 'refs/heads/main' && '--prod' || '' }}
 
       - name: AI Review Reminder
         run: echo "Use GitHub Copilot in VS Code for AI suggestions before merging."
