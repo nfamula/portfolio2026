@@ -30,7 +30,7 @@ export default function HomePage() {
       </div>
       <div className="flex gap-6 justify-center">
         <p className="text-center font-serif text-slate-700">
-          Built with <b>Next.js | React.js | Javascript | Typescript</b> styled
+          Built with <b>Next.js | React.js | JavaScript | TypeScript</b> styled
           with <b>Tailwind CSS </b>deployed on <b>Vercel</b> and hosted on{" "}
           <b>GitHub</b>
         </p>
