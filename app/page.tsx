@@ -56,7 +56,7 @@ export default function HomePage() {
         />
       </div>
       <div className="flex gap-6 justify-center">
-        <p className="flex text-center font-serif text-slate-700">
+        <p className="text-center font-serif text-slate-700">
           <a
             href="https://github.com/nfamula/portfolio2026"
             target="_blank"
