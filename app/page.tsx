@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="bg-violet-100 text-slate-900 rounded-lg flex flex-col items-center min-h-[calc(100vh-9rem)]">
+    <main className="bg-violet-100 text-slate-900 rounded-lg px-8 flex flex-col items-center min-h-[calc(100vh-9rem)]">
       <Image
         src="/images/NF-border.png"
         alt="NF monogram logo"
@@ -22,7 +22,7 @@ export default function HomePage() {
           Collaboration is as important as code.
         </span>
       </p>
-      <div className="flex my-10 gap-6 justify-center">
+      <div className="flex flex-col md:flex-row my-10 gap-6 justify-center text-center">
         <Link
           href="/full-portfolio"
           className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
