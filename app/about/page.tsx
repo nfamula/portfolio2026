@@ -3,16 +3,14 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main className="p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
-      <h1 className="text-4xl m-6 font-bold text-slate-900 mb-8 font-sans">
-        About Me
-      </h1>
-      <p className="text-slate-700 text-lg mb-6 font-serif">
+      <h1 className="text-4xl m-6 font-bold text-slate-900 mb-8">About Me</h1>
+      <p className="text-slate-700 text-lg mb-6">
         A decade in tech has taught me that{" "}
         <strong>collaboration is as important as code</strong>. The best
         projects are not just well-architected. They are well understood, well
         shared, and well supported by the people who build and use them.
       </p>
-      <p className="text-slate-700 text-lg mb-6 font-serif">
+      <p className="text-slate-700 text-lg mb-6">
         I&apos;ve always been drawn to the spaces between disciplines, teaching
         marketers how to confidently update their own websites, running
         engineering lunch-and-learns, and volunteering as a mentor with Canada
@@ -21,10 +19,10 @@ export default function AboutPage() {
         code reviews. I am passionate about helping others level up along the
         way.
       </p>
-      <h2 className="text-2xl font-bold text-slate-900 m-6 font-sans">
+      <h2 className="text-2xl font-bold text-slate-900 m-6">
         An unconventional career path
       </h2>
-      <p className="text-slate-700 text-lg mb-6 font-serif">
+      <p className="text-slate-700 text-lg mb-6">
         I did not begin my career in technology. With a BA in Linguistics, I
         started out as a Communication Disorders Assistant. The work was
         meaningful and challenging, but during a travel break I began
@@ -35,13 +33,13 @@ export default function AboutPage() {
         curiosity led me to pursue formal training at Lighthouse Labs in 2016. I
         have been working as a developer ever since.
       </p>
-      <p className="text-slate-700 text-lg mb-6 font-serif">
+      <p className="text-slate-700 text-lg mb-6">
         Outside of my development work, I am currently working toward a DevOps
         certificate at the <strong>University of Toronto</strong> and training
         for the Toronto marathon. Both keep me honest about discipline,
         endurance, and the value of steady progress.
       </p>
-      <p className="text-slate-700 text-lg mb-6 font-serif">
+      <p className="text-slate-700 text-lg mb-6">
         Whether you have a project in mind, want to collaborate, or just want to
         say hi, feel free to send me an{" "}
         <a
@@ -66,7 +64,7 @@ export default function AboutPage() {
           height={300}
           className="rounded-full"
         />
-        <ul className="text-slate-700 text-lg font-serif list-inside mt-4 space-y-2">
+        <ul className="text-slate-700 text-lg list-inside mt-4 space-y-2">
           <li>
             Email:{" "}
             <a

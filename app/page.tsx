@@ -3,40 +3,48 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="bg-violet-100 text-slate-900 p-12 rounded-lg flex flex-col items-center gap-8 min-h-[calc(100vh-9rem)]">
-      <h1 className="text-5xl font-sans text-slate-900 text-center">
-        Natalie Famula
+    <main className="bg-violet-100 text-slate-900 rounded-lg flex flex-col items-center min-h-[calc(100vh-9rem)]">
+      <Image
+        src="/images/NF-border.png"
+        alt="NF monogram logo"
+        width={250}
+        height={250}
+      />
+      <h1 className="text-2xl text-slate-700 text-center logo-style">
+        <span>Natalie</span>
+        <span>Famula</span>
       </h1>
-      <p className="text-slate-900 text-lg font-serif max-w-xl justify-center text-center">
-        I build websites and tools that help teams work smarter and projects
-        succeed, with 10 years of experience across various industries. I&apos;m
-        open to new opportunities and collaborations, so feel free to reach out
-        to connect or learn more about my work.
+      <p className="text-slate-900 mt-10 text-lg max-w-xl justify-center text-center">
+        I build websites and tools that help projects succeed, with 10 years of
+        web development experience across various industries.
+        <span className="font-golden">
+          {" "}
+          Collaboration is as important as code.
+        </span>
       </p>
-      <div className="flex gap-6 justify-center">
+      <div className="flex my-10 gap-6 justify-center">
         <Link
           href="/full-portfolio"
-          className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
+          className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
         >
-          Projects
+          Explore my projects
         </Link>
         <a
           href="/downloads/NatalieFamula_Resume.pdf"
           download="NatalieFamula_Resume.pdf"
-          className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md font-sans hover:opacity-90 transition"
+          className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
         >
-          Resume
+          Download resume PDF
         </a>
       </div>
-      <div className="flex gap-6 justify-center">
-        <p className="text-center font-serif text-slate-700">
-          Built with{" "}
-          <strong>Next.js | React.js | JavaScript | TypeScript</strong> styled
-          with <strong>Tailwind CSS </strong>deployed on <strong>Vercel</strong>{" "}
-          and hosted on <strong>GitHub</strong>
+      <div className="flex mt-8 gap-6 justify-center">
+        <p className="text-center text-slate-700">
+          Built with <strong>Next.js & TypeScript</strong> styled with{" "}
+          <strong>Tailwind CSS </strong>deployed on <strong>Vercel</strong> and
+          hosted on <strong>GitHub</strong>
         </p>
       </div>
-      <div className="flex justify-between gap-6 sm:flex-row flex-col items-center">
+      <div className="flex mt-8 justify-between gap-6 sm:flex-row flex-col items-center">
         <Image
           src="/images/skill-badges/JS-icons.svg"
           width={200}
@@ -56,8 +64,8 @@ export default function HomePage() {
           alt="Git, GitHub, GitHub Actions, Vercel"
         />
       </div>
-      <div className="flex gap-6 justify-center">
-        <p className="text-center font-serif text-slate-700">
+      <div className="flex my-8 gap-6 justify-center">
+        <p className="text-center text-slate-700">
           <a
             href="https://github.com/nfamula/portfolio2026"
             target="_blank"

@@ -7,9 +7,7 @@ import { cardDetails } from "../data/projectCardsData";
 export default function FullPortfolioPage() {
   return (
     <main className="p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
-      <h1 className="text-4xl font-bold text-slate-900 mb-8 font-sans">
-        Web projects
-      </h1>
+      <h1 className="text-4xl font-bold text-slate-900 mb-8">Web projects</h1>
       {/* todo: certifications, skills, interests, about me */}
       {/* todo: blog: pull in from substack, pull in youtube videos */}
       <p className="text-slate-700 text-lg mb-6">

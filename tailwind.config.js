@@ -3,8 +3,27 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-lexend)", "system-ui", "sans-serif"],
-        serif: ["var(--font-zilla-slab)", "Georgia", "serif"],
+        heading: [
+          "var(--font-heading)",
+          "Georgia",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
+        body: [
+          "var(--font-body)",
+          "Georgia",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
+        accent: [
+          "var(--font-accent)",
+          "Georgia",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
       },
     },
   },

@@ -80,7 +80,7 @@ export default function ProjectCard({
       </div>
       <div
         className="
-      mt-4 mb-4 text-slate-600 font-serif whitespace-pre-line px-4
+      mt-4 mb-4 text-slate-600 whitespace-pre-line px-4
       overflow-auto
       max-h-full
       md:max-h-0 md:overflow-hidden md:group-hover:max-h-500
