@@ -10,14 +10,14 @@ export default function HomePage() {
         width={250}
         height={250}
       />
-      <h1 className="text-2xl text-slate-700 text-center logo-style">
+      <h1 className="text-2xl text-center logo-style">
         <span>Natalie</span>
         <span>Famula</span>
       </h1>
-      <p className="text-slate-900 mt-10 text-lg max-w-xl justify-center text-center">
+      <p className="mt-10 text-lg max-w-xl justify-center text-center">
         I build websites and tools that help projects succeed, with 10 years of
         web development experience across various industries.
-        <span className="font-golden">
+        <span className="font-accent">
           {" "}
           Collaboration is as important as code.
         </span>

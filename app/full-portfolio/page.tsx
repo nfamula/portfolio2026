@@ -10,12 +10,12 @@ export default function FullPortfolioPage() {
       <h1 className="text-4xl font-bold text-slate-900 mb-8">Web projects</h1>
       {/* todo: certifications, skills, interests, about me */}
       {/* todo: blog: pull in from substack, pull in youtube videos */}
-      <p className="text-slate-700 text-lg mb-6">
+      <p className="text-slate-900 text-lg mb-6">
         Here are some examples of published projects from my web development
         career. I am always eager to take on new challenges and learn new
         technologies. If you are interested in learning more about my work or
         discussing potential opportunities, please don&apos;t hesitate to{" "}
-        <Link href="/contact" className="text-violet-700 hover:underline">
+        <Link href="/contact" className="text-yellow-700 hover:underline">
           reach out
         </Link>
         .

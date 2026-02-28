@@ -32,14 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
-.font-rose{
-  color: #8E3A59; 
-}
-
-.font-golden{
-  color:#8A6A2F;
-}
-
 .logo-style {
   font-family: var(--font-body);
   font-weight: 700;
