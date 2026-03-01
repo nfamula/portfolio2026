@@ -46,7 +46,7 @@ export default function ProjectCard({
           quality={100}
         />
       </div>
-      <div className="p-6">
+      <div>
         <h2 className="text-xl font-heading p-4">{title}</h2>
         <div className="my-4 px-4 flex opacity-90 grayscale-[0.2]">
           <Image

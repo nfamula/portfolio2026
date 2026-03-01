@@ -42,3 +42,12 @@ h1, h2, h3, h4, h5, h6 {
 .logo-style span {
   display: block;
 }
+
+.bg-striped {
+  background: repeating-linear-gradient(
+    to right, 
+    #e0d7f3 0px, #e0d7f3 20px, 
+    #ffffff 20px, #ffffff 40px, 
+    #e0d7f3 40px, #e0d7f3 60px
+  );
+}
