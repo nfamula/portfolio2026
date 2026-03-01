@@ -39,7 +39,7 @@ export default function AboutPage() {
             </span>
             . The best projects are not just well-architected. They are well
             understood, well shared, and well supported by the people who build
-            and use them. Located in Toronto, Canada.
+            and use them.
           </p>
           <p className="text-lg mb-6">
             I&apos;ve always been drawn to the spaces between disciplines,
@@ -48,6 +48,10 @@ export default function AboutPage() {
             with Canada Learning Code. I am passionate about helping others
             level up along the way, and I am quick to raise my hand to onboard
             new teammates or offer thoughtful, constructive code reviews.
+          </p>
+          <p className="text-lg mb-6">
+            Proud to be Canadian, located in Toronto, and open to remote
+            opportunities across time zones.
           </p>
           <a
             href="https://www.linkedin.com/in/nataliefamula/"
