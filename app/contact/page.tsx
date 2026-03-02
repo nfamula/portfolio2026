@@ -14,9 +14,9 @@ export default function ContactPage() {
       <h2 className="logo-style mb-6 text-center">
         I&apos;d love to hear from you
       </h2>
-      <hr className="border-t border-black my-8" />
+      <hr className="border-t border-black my-6" />
       <div className="flex flex-col items-center">
-        <ul className="text-slate-900 text-lg list-inside mt-4 space-y-2 text-center">
+        <ul className="text-slate-900 text-lg list-inside text-center">
           <li>
             <a href="mailto:nfamula@gmail.com" className="hover:underline">
               nfamula@gmail.com
@@ -32,10 +32,7 @@ export default function ContactPage() {
           </li>
           <li>
             GitHub:{" "}
-            <a
-              href="https://github.com/nfamula"
-              className="not-last-of-type:hover:underline"
-            >
+            <a href="https://github.com/nfamula" className="hover:underline">
               @nfamula
             </a>
           </li>
@@ -46,7 +43,7 @@ export default function ContactPage() {
           alt="handshake"
           width={150}
           height={50}
-          className="object-contain mx-auto mt-10"
+          className="object-contain mx-auto mt-4"
         />
       </div>
     </main>

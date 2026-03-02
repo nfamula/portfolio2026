@@ -7,10 +7,10 @@ export default function HeaderNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-slate-900 text-white">
-      <nav className="flex items-center gap-4 justify-between mx-auto p-4">
+      <nav className="flex items-center gap-4 justify-between mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-8">
-          <Link href="/" className="pl-2 py-2">
+          <Link href="/" className="pl-2 py-1">
             <Image
               src="/images/NF-logo-dark.png"
               alt="NF monogram logo Natalie Famula"
