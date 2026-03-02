@@ -64,6 +64,7 @@ export default function HeaderNavigation() {
           className="md:hidden flex flex-col gap-1.5 mr-0"
           onClick={() => setIsOpen(!isOpen)}
           type="button"
+          aria-label={isOpen ? "close menu" : "open menu"}
         >
           <span
             className={`w-6 h-0.5 bg-white transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}
