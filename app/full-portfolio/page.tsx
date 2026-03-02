@@ -5,7 +5,7 @@ import { cardDetails } from "../data/projectCardsData";
 export default function FullPortfolioPage() {
   return (
     <main className="p-4 bg-violet-100 min-h-[calc(100vh-9rem)]">
-      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
+      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mt-6 mb-10">
         <h1 className="logo-style text-3xl">Web projects</h1>
         {/* todo: certifications, skills, interests, about me */}
         {/* todo: blog: pull in from substack, pull in youtube videos */}
@@ -22,7 +22,7 @@ export default function FullPortfolioPage() {
           Contact me
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {cardDetails.map((projectCardData) => (
           <ProjectCard
             key={projectCardData.id}

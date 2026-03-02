@@ -30,7 +30,7 @@ export default function AboutPage() {
             className="object-cover mx-4"
           />
         </div>
-        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8">
+        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
           <h1 className="logo-style text-3xl">About Me</h1>
           <p className="text-lg mb-6">
             A decade in tech has taught me that{" "}
@@ -78,7 +78,7 @@ export default function AboutPage() {
         />
       </section>
       <section className="bg-striped p-4">
-        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
+        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 my-10">
           <h3 className="logo-style md:text-2xl text-xl">
             An unconventional career path
           </h3>
