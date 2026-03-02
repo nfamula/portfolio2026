@@ -1,53 +1,86 @@
 @import "tailwindcss";
 
-/* Font variables */
-:root {
-  --font-heading: "Baskervville", "Georgia", "Times New Roman", Times, serif;
-  --font-body: "Libre Baskerville", "Georgia", "Times New Roman", Times, serif;
-  --font-accent: "Playfair Display", "Georgia", "Times New Roman", Times, serif;
+@theme {
+  --font-heading: "Baskervville", "Georgia", "Times New Roman", serif;
+  --font-body: "Libre Baskerville", "Georgia", "Times New Roman", serif;
+  --font-accent: "Playfair Display", "Georgia", "Times New Roman", serif;
+
+  --animate-float: floatSettle 5s ease-out forwards, wind 3s ease-in-out infinite;
+  --animate-sway: sway 3s ease-in-out infinite;
+  --animate-bike-cross: bike-travel 20s linear forwards, bike-drive 4s ease-in-out infinite;
+
+  @keyframes floatSettle {
+    /* Initial Flight from Bottom */
+    0% { transform: translateY(100vh); opacity: 0; }
+    
+    /* Reach the "Higher Up" spot and Settle */
+    60% { transform: translateY(-25vh); opacity: 0.15; }
+    75% { transform: translateY(-25vh); } /* Hold position for a beat */
+
+    /* Dip down slightly*/
+    82% { transform: translateY(-24.5vh); opacity: 0.25; } /* Small dip down */
+    
+    /* Resting Position */
+    100% { transform: translateY(-25vh); opacity: 0.5; } 
+  }
+
+  @keyframes wind {
+    0%, 100% { transform: translateY(-25vh) translateX(0); opacity: 0.75; }
+    50% { transform: translateY(-27vh) translateX(4px) rotate(1deg); opacity: 0.75; }
+  }
+
+  @keyframes sway {
+    0%, 100% { transform: translateX(-1vw) translateY(0) translateZ(0) rotate(0deg); opacity: 0.8; }
+    50% { transform: translateX(-1vw) translateY(-6px) translateZ(0) rotate(2deg); opacity: 0.8; }
+  }
+
+  @keyframes bike-travel {
+    0% { transform: translateX(0vw) scaleX(-1) translateZ(0); opacity: 0.7; }
+    100% { transform: translateX(45vw) scaleX(-1) translateZ(0); opacity: 0.8; }
+  }
+
+  @keyframes bike-drive {
+    0%, 100% { transform: translateX(45vw) scaleX(-1) translateY(0) rotate(0deg); opacity: 0.8; }
+    50% { transform: translateX(45vw) scaleX(-1) translateY(-4px) rotate(-2deg); opacity: 0.8; }
+  }
 }
 
-/* Base typography */
-html,
-body {
-  font-family: var(--font-body);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
+/* Base typography using the variables defined above */
+@layer base {
+  html, body {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-style: normal;
+    font-weight: 600;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-style: normal;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-}
+@layer components {
+  .logo-style {
+    font-family: var(--font-body);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
 
-.font-accent {
-  font-family: var(--font-accent);
-  font-style: italic;
-}
+  .logo-style span {
+    display: block;
+  }
 
-.logo-style {
-  font-family: var(--font-body);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-.logo-style span {
-  display: block;
-}
-
-.bg-striped {
-  background: repeating-linear-gradient(
-    to right, 
-    #e0d7f3 0px, #e0d7f3 20px, 
-    #ffffff 20px, #ffffff 40px, 
-    #e0d7f3 40px, #e0d7f3 60px
-  );
+  .bg-striped {
+    background: repeating-linear-gradient(
+      to right, 
+      #e0d7f3 0px, #e0d7f3 20px, 
+      #ffffff 20px, #ffffff 40px, 
+      #e0d7f3 40px, #e0d7f3 60px
+    );
+  }
 }
