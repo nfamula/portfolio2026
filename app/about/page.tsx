@@ -61,18 +61,27 @@ export default function AboutPage() {
           </a>
         </div>
       </section>
-      <section className="h-120 w-full bg-[url('/images/TechTank-panel.png')] bg-cover bg-center p-10 filter grayscale">
-        <div className="bg-gradient-to-t from-black/60 to-transparent">
-          <h2 className="font-accent text-3xl text-center text-white text-shadow-lg">
+      <section className="md:h-120 w-full md:bg-[url('/images/TechTank-panel.png')] sm:bg-white md:bg-cover md:bg-center md:p-10 md:filter md:grayscale my-8">
+        <div className="md:bg-linear-to-t md:from-black/60 md:to-transparent md:m-0 m-8">
+          <h2 className="font-accent text-3xl text-center md:text-white sm:text-black md:text-shadow-lg">
             I stay rooted in the local tech scene through volunteer mentorship,
             and contributing to the conversations that move our industry
             forward.
           </h2>
         </div>
+        <Image
+          src="/images/TechTank-panel.png"
+          alt="Natalie Famula speaking on a panel at Tech Tank 2023"
+          width={400}
+          height={400}
+          className="md:hidden block object-cover mt-8 w-full"
+        />
       </section>
       <section className="bg-striped width-100vw p-10">
         <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
-          <h3 className="logo-style text-2xl">An unconventional career path</h3>
+          <h3 className="logo-style md:text-2xl text-xl">
+            An unconventional career path
+          </h3>
           <p className="text-lg mb-6">
             I did not begin my career in technology. With a BA in Linguistics, I
             started out as a Communication Disorders Assistant. The work was
