@@ -17,13 +17,13 @@ export const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["italic"],
-  variable: "--font-playfair-display",
+  variable: "--font-accent",
 });
 
 export const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-libre-baskerville",
+  variable: "--font-body",
 });
 
 export const metadata = {
