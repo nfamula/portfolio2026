@@ -3,54 +3,48 @@ import Image from "next/image";
 export default function ContactPage() {
   return (
     <main className="p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
-      <h1 className="text-4xl font-bold text-slate-900 mb-8 font-sans text-center">
-        Get in Touch - I&apos;d love to hear from you!
-      </h1>
-      <p className="text-slate-700 text-lg mb-6 font-serif text-center">
-        I&apos;m open to new opportunities and collaborations. Feel free to reach out to me via{" "}
-        <a href="mailto:nfamula@gmail.com" className="text-slate-700 hover:underline">
-          email
-        </a>{" "}
-        or connect with me on{" "}
-        <a
-          href="https://www.linkedin.com/in/nataliefamula/"
-          className="text-slate-700 hover:underline"
-        >
-          LinkedIn.
-        </a>
-      </p>
+      <Image
+        src="/images/headshot_photographer-AllyChadwick.jpg"
+        alt="Natalie Famula"
+        width={175}
+        height={175}
+        className="rounded-full p-1 border-2 border-black shadow-lg mx-auto"
+      />
+      <h1 className="text-4xl font-accent mb-8 text-center">Get in touch!</h1>
+      <h2 className="logo-style mb-6 text-center">
+        I&apos;d love to hear from you
+      </h2>
+      <hr className="border-t border-black my-6" />
       <div className="flex flex-col items-center">
-        <Image
-          src="/images/headshot_photographer-AllyChadwick.jpg"
-          alt="Natalie Famula"
-          width={300}
-          height={300}
-          className="rounded-full"
-        />
-        <ul className="text-slate-700 text-lg font-serif list-inside mt-4 space-y-2">
+        <ul className="text-slate-900 text-lg list-inside text-center">
           <li>
-            Email:{" "}
-            <a href="mailto:nfamula@gmail.com" className="text-slate-700 hover:underline">
+            <a href="mailto:nfamula@gmail.com" className="hover:underline">
               nfamula@gmail.com
             </a>
           </li>
           <li>
-            LinkedIn:{" "}
             <a
               href="https://www.linkedin.com/in/nataliefamula/"
-              className="text-slate-700 hover:underline"
+              className="hover:underline"
             >
               linkedin.com/in/nataliefamula
             </a>
           </li>
           <li>
             GitHub:{" "}
-            <a href="https://github.com/nfamula" className="text-slate-700 hover:underline">
+            <a href="https://github.com/nfamula" className="hover:underline">
               @nfamula
             </a>
           </li>
           <li>Located in Toronto, Canada 🇨🇦</li>
         </ul>
+        <Image
+          src="/images/shakinghands.svg"
+          alt="handshake"
+          width={150}
+          height={50}
+          className="object-contain mx-auto mt-4"
+        />
       </div>
     </main>
   );

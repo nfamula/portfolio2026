@@ -24,10 +24,10 @@ export default function ProjectCard({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="group bg-white rounded-lg shadow transition-all duration-300">
+    <div className="group relative bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_12px_24px_rgba(15,23,43,0.1)]">
       <div
         onClick={() => setOpen(true)}
-        className="md:cursor-pointer relative w-full h-auto aspect-video rounded-t-lg overflow-hidden"
+        className="md:cursor-pointer relative w-full h-auto aspect-video overflow-hidden"
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
@@ -46,24 +46,24 @@ export default function ProjectCard({
           quality={100}
         />
       </div>
-      <div className="p-6">
-        <h2 className="text-2xl font-semibold">{title}</h2>
-        <div className="mt-4 flex">
+      <div>
+        <h2 className="text-xl font-heading p-4">{title}</h2>
+        <div className="my-4 px-4 flex opacity-90 grayscale-[0.2]">
           <Image
             src={badgesImage}
             alt={`${title}`}
-            width={200}
-            height={50}
+            width={100}
+            height={25}
             className="object-contain"
           />
         </div>
-        <p className="mt-2 text-slate-600">{content}</p>
+        <p className="font-body px-4 text-sm">{content}</p>
         {projectLink?.trim() ? (
           <Link
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-violet-700 hover:underline"
+            className="text-yellow-700 px-4 text-sm font-accent hover:underline"
           >
             Visit Project
           </Link>
@@ -73,36 +73,33 @@ export default function ProjectCard({
           </span>
         )}
       </div>
-      <div className="flex items-center text-slate-600 text-2xl mt-2 text-center justify-center cursor-pointer group-hover:text-slate-600 transition-colors duration-300">
+      <div className="flex items-center text-slate-900 text-2xl mt-2 text-center justify-center cursor-pointer group-hover:text-slate-600 transition-colors duration-300">
         <span className="ml-1 transition-transform duration-300 group-hover:rotate-45">
           +
         </span>
       </div>
       <div
         className="
-      mt-4 mb-4 text-slate-600 font-serif whitespace-pre-line px-4
-      overflow-auto
-      max-h-full
-      md:max-h-0 md:overflow-hidden md:group-hover:max-h-500
-      transition-all duration-300
-    "
+          mt-4 mb-4 text-slate-900 whitespace-pre-line px-4
+          overflow-auto
+          max-h-full
+          md:max-h-0 md:overflow-hidden md:group-hover:max-h-500
+          transition-all duration-300
+        "
       >
         {more}
       </div>
       {/* Lightbox opens when click image, click anywhere to close. Disabled on small screens. */}
       {open && (
         <div
-          className="hidden md:flex fixed inset-0 z-50 items-center justify-center bg-violet-100/50 backdrop-blur-sm"
+          className="hidden md:flex fixed inset-0 z-50 items-center justify-center bg-black/70 backdrop-blur-sm"
           onClick={() => setOpen(false)}
         >
-          <div className="relative w-full max-w-8xl p-4">
-            {/* Collage layout */}
-            <div
-              className="grid h-[95vh] gap-3 rounded-xl bg-black/40 p-4 shadow-2xl
-          grid-cols-1 md:grid-cols-[1fr_2fr_1fr] flex-1"
-            >
+          <div className="relative w-full max-w-[1000px] p-4">
+            {/* Collage gird lightbox layout */}
+            <div className="grid h-[90vh] gap-3 rounded-lg p-4 shadow-2xl grid-cols-1 md:grid-cols-[1fr_2fr_1fr] bg-stone-100">
               {/* Left */}
-              <div className="relative overflow-hidden flex items-center justify-center">
+              <div className="relative overflow-hidden flex items-center justify-center max-h-[80vh]">
                 <Image
                   src={`/images/${screenshotBase}_screenshot1.png`}
                   alt="project screenshot"
@@ -113,29 +110,29 @@ export default function ProjectCard({
               </div>
 
               {/* Center stack */}
-              <div className="hidden md:grid grid-rows-2 gap-3">
-                <div className="relative overflow-hidden">
+              <div className="hidden md:grid grid-rows-2 gap-1">
+                <div className="relative overflow-hidden max-h-[40vh]">
                   <Image
                     src={`/images/${screenshotBase}_screenshot.png`}
                     alt="project screenshot"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     quality={100}
                   />
                 </div>
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden max-h-[40vh]">
                   <Image
                     src={`/images/${screenshotBase}_screenshot3.png`}
                     alt="project screenshot"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     quality={100}
                   />
                 </div>
               </div>
 
               {/* Right */}
-              <div className="relative overflow-hidden flex items-center justify-center">
+              <div className="relative overflow-hidden flex items-center justify-center max-h-[80vh]">
                 <Image
                   src={`/images/${screenshotBase}_screenshot2.png`}
                   alt="project screenshot"
@@ -144,6 +141,16 @@ export default function ProjectCard({
                 />
               </div>
             </div>
+          </div>
+          {/* watermark */}
+          <div className="absolute bottom-2 right-2 pointer-events-none m-2">
+            <Image
+              src="/images/NF-watermark.png"
+              alt="Natalie Famula watermark"
+              width={206}
+              height={250}
+              className="object-contain rounded-full opacity-60 shadow-lg"
+            />
           </div>
         </div>
       )}
