@@ -25,22 +25,35 @@ export default function HeaderNavigation() {
                 href="/downloads/NatalieFamula_Resume.pdf"
                 download="NatalieFamula_Resume.pdf"
                 className="hover:underline"
+                aria-label="Download my resume"
               >
                 Resume
               </a>
             </li>
             <li>
-              <Link href="/full-portfolio" className="hover:underline">
+              <Link
+                href="/full-portfolio"
+                className="hover:underline"
+                aria-label="View my projects"
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:underline">
+              <Link
+                href="/about"
+                className="hover:underline"
+                aria-label="Learn more about me"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:underline">
+              <Link
+                href="/contact"
+                className="hover:underline"
+                aria-label="Get in touch with me"
+              >
                 Contact
               </Link>
             </li>
@@ -50,6 +63,7 @@ export default function HeaderNavigation() {
         <button
           className="md:hidden flex flex-col gap-1.5 mr-0"
           onClick={() => setIsOpen(!isOpen)}
+          type="button"
         >
           <span
             className={`w-6 h-0.5 bg-white transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}
@@ -71,13 +85,25 @@ export default function HeaderNavigation() {
             >
               Resume
             </a>
-            <Link href="/full-portfolio" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/full-portfolio"
+              onClick={() => setIsOpen(false)}
+              aria-label="View my projects"
+            >
               Projects
             </Link>
-            <Link href="/about" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/about"
+              onClick={() => setIsOpen(false)}
+              aria-label="Learn more about me"
+            >
               About
             </Link>
-            <Link href="/contact" onClick={() => setIsOpen(false)}>
+            <Link
+              href="/contact"
+              onClick={() => setIsOpen(false)}
+              aria-label="Get in touch with me"
+            >
               Contact
             </Link>
           </div>
