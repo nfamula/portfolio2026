@@ -40,10 +40,10 @@ export default function ContactPage() {
         </ul>
         <Image
           src="/images/shakinghands.svg"
-          alt="handshake"
+          alt="handshake graphic"
           width={150}
-          height={50}
-          className="object-contain mx-auto mt-4"
+          height={150}
+          className="animate-sway object-contain mx-auto mt-4"
         />
       </div>
     </main>
