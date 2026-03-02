@@ -10,3 +10,7 @@ build/
 
 # Typescript
 *.tsbuildinfo
+
+# Misc
+.DS_Store
+*.log
