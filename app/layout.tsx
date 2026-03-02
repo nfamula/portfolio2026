@@ -1,19 +1,29 @@
-import { Lexend, Zilla_Slab } from "next/font/google";
+import {
+  Baskervville,
+  Libre_Baskerville,
+  Playfair_Display,
+} from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import HeaderNavigation from "./components/navigation/header-navigation";
 
-const lexend = Lexend({
+export const baskervville = Baskervville({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-lexend",
-  display: "swap",
+  weight: ["400", "700"],
+  style: ["normal"],
+  variable: "--font-heading",
 });
 
-const zillaSlab = Zilla_Slab({
+export const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-zilla-slab",
-  display: "swap",
+  weight: ["400", "700"],
+  style: ["italic"],
+  variable: "--font-accent",
+});
+
+export const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-body",
 });
 
 export const metadata = {
@@ -36,35 +46,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${lexend.variable} ${zillaSlab.variable}`}>
+    <html
+      lang="en"
+      className={`${baskervville.variable} ${playfairDisplay.variable} ${libreBaskerville.variable}`}
+    >
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
       <body>
-        <header className="bg-slate-900 text-white p-6 font-sans">
-          <ul className="flex gap-6">
-            <li>
-              <a
-                href="/downloads/NatalieFamula_Resume.pdf"
-                download="NatalieFamula_Resume.pdf"
-              >
-                Download Resume
-              </a>
-            </li>
-            <li>
-              <Link href="/full-portfolio">Projects</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-          </ul>
-        </header>
+        <HeaderNavigation />
         <div id="app-root">{children}</div>
-        <footer className="bg-slate-900 text-white p-6 font-sans">
+        <footer className="bg-slate-900 text-white p-6">
           <nav className="mx-auto flex flex-col md:flex-row md:gap-6 text-center md:text-left items-center md:items-start">
             <p>© 2026</p>
             <p>coded with next.js</p>
