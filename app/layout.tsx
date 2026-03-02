@@ -4,8 +4,7 @@ import {
   Playfair_Display,
 } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import Image from "next/image";
+import HeaderNavigation from "./components/navigation/header-navigation";
 
 export const baskervville = Baskervville({
   subsets: ["latin"],
@@ -56,44 +55,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
       </head>
       <body>
-        <header className="bg-slate-900 text-white">
-          <ul className="flex gap-6 items-center">
-            <li className="pl-2 py-2">
-              <Link href="/">
-                <Image
-                  src="/images/NF-logo-dark.png"
-                  alt="NF monogram logo Natalie Famula"
-                  width={124}
-                  height={60}
-                />
-              </Link>
-            </li>
-            <li>
-              <a
-                href="/downloads/NatalieFamula_Resume.pdf"
-                download="NatalieFamula_Resume.pdf"
-                className="hover:underline"
-              >
-                Resume
-              </a>
-            </li>
-            <li>
-              <Link href="/full-portfolio" className="hover:underline">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:underline">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:underline">
-                About
-              </Link>
-            </li>
-          </ul>
-        </header>
+        <HeaderNavigation />
         <div id="app-root">{children}</div>
         <footer className="bg-slate-900 text-white p-6">
           <nav className="mx-auto flex flex-col md:flex-row md:gap-6 text-center md:text-left items-center md:items-start">
