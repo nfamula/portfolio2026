@@ -37,6 +37,15 @@ export default function HomePage() {
           Download resume PDF
         </a>
       </div>
+      <div className="hidden absolute lg:flex bottom-6 right-0 px-25">
+        <Image
+          src="/images/airship.svg"
+          alt="airship graphic"
+          width={150}
+          height={150}
+          className="animate-float"
+        />
+      </div>
       <div className="flex mt-4 gap-6 justify-center">
         <p className="text-center text-slate-700">
           Built with <strong>Next.js & TypeScript</strong> styled with{" "}
