@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <main className="text-slate-900">
-      <section className="bg-striped width-100vw p-8">
+      <section className="bg-striped p-8">
         <div className="flex items-center justify-center">
           <Image
             src="/images/squiggle.svg"
