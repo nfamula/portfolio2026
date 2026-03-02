@@ -24,7 +24,7 @@ export default function ProjectCard({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="group relative bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_12px_24px_rgba(15,23,43,0.1)]">
+    <div className="group relative bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_12px_24px_rgba(15,23,43,0.1)">
       <div
         onClick={() => setOpen(true)}
         className="md:cursor-pointer relative w-full h-auto aspect-video overflow-hidden"

@@ -37,7 +37,7 @@ export default function HomePage() {
           Download resume PDF
         </a>
       </div>
-      <div className="flex mt-8 gap-6 justify-center">
+      <div className="flex mt-4 gap-6 justify-center">
         <p className="text-center text-slate-700">
           Built with <strong>Next.js & TypeScript</strong> styled with{" "}
           <strong>Tailwind CSS </strong>deployed on <strong>Vercel</strong> and

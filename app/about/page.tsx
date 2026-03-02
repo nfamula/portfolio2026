@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <main className="text-slate-900">
-      <section className="bg-striped p-8">
+      <section className="bg-striped p-4">
         <div className="flex items-center justify-center">
           <Image
             src="/images/squiggle.svg"
@@ -30,7 +30,7 @@ export default function AboutPage() {
             className="object-cover mx-4"
           />
         </div>
-        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8">
+        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
           <h1 className="logo-style text-3xl">About Me</h1>
           <p className="text-lg mb-6">
             A decade in tech has taught me that{" "}
@@ -61,8 +61,8 @@ export default function AboutPage() {
           </a>
         </div>
       </section>
-      <section className="md:h-120 w-full md:bg-[url('/images/TechTank-panel.png')] sm:bg-white md:bg-cover md:bg-center md:p-10 md:filter md:grayscale my-8">
-        <div className="md:bg-linear-to-t md:from-black/60 md:to-transparent md:m-0 m-8">
+      <section className="md:h-120 w-full md:bg-[url('/images/TechTank-panel.png')] sm:bg-white md:bg-cover md:bg-center md:p-10 md:filter md:grayscale my-8 md:my-0">
+        <div className="md:bg-linear-to-t md:from-black/60 md:to-transparent m-8 md:m-0">
           <h2 className="font-accent text-3xl text-center md:text-white sm:text-black md:text-shadow-lg">
             I stay rooted in the local tech scene through volunteer mentorship,
             and contributing to the conversations that move our industry
@@ -77,8 +77,8 @@ export default function AboutPage() {
           className="md:hidden block object-cover mt-8 w-full"
         />
       </section>
-      <section className="bg-striped p-10">
-        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
+      <section className="bg-striped p-4">
+        <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 my-10">
           <h3 className="logo-style md:text-2xl text-xl">
             An unconventional career path
           </h3>
@@ -119,7 +119,7 @@ export default function AboutPage() {
             alt="Natalie Famula floral logo"
             width={100}
             height={100}
-            className="object-cover rounded-xl mx-auto"
+            className="object-cover rounded-xl mx-auto mb-10"
           />
         </Link>
       </section>

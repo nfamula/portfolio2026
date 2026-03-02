@@ -7,7 +7,7 @@ export default function HeaderNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-slate-900 text-white">
-      <nav className="flex items-center gap-4 justify-between mx-auto">
+      <nav className="flex items-center gap-4 justify-between mx-auto pr-4 md:pr-0">
         {/* Logo */}
         <div className="flex items-center gap-8">
           <Link href="/" className="pl-2 py-1">
@@ -61,7 +61,7 @@ export default function HeaderNavigation() {
         </div>
         {/* Hamburger Icon */}
         <button
-          className="md:hidden flex flex-col gap-1.5 mr-0"
+          className="md:hidden flex flex-col gap-1.5 mr-6"
           onClick={() => setIsOpen(!isOpen)}
           type="button"
           aria-label={isOpen ? "close menu" : "open menu"}
@@ -78,7 +78,7 @@ export default function HeaderNavigation() {
         </button>
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden flex flex-col gap-4 mt-4 p-4">
+          <div className="md:hidden flex flex-col gap-4 mt-4 pl-4 pr-8 pb-4">
             <a
               href="/downloads/NatalieFamula_Resume.pdf"
               download="NatalieFamula_Resume.pdf"
