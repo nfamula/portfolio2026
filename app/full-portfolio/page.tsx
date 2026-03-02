@@ -6,7 +6,7 @@ import { cardDetails } from "../data/projectCardsData";
 export default function FullPortfolioPage() {
   return (
     <main className="p-4 bg-violet-100 min-h-[calc(100vh-9rem)]">
-      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
+      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10 mt-6">
         <h1 className="logo-style text-3xl">Web projects</h1>
         {/* todo: certifications, skills, interests, about me */}
         {/* todo: blog: pull in from substack, pull in youtube videos */}
@@ -51,7 +51,7 @@ export default function FullPortfolioPage() {
         alt="bicycle graphic"
         width={100}
         height={100}
-        className="animate-bike-cross object-cover"
+        className="animation-trigger-view animate-bike-cross object-cover"
       />
     </main>
   );

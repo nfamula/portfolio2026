@@ -6,8 +6,8 @@
   --font-accent: "Playfair Display", "Georgia", "Times New Roman", serif;
 
   --animate-float: floatSettle 5s ease-out forwards, wind 3s ease-in-out infinite;
-  --animate-sway: sway 5s ease-in-out 3s infinite;
-  --animate-bike-cross: bike-travel 6s linear forwards, bike-drive 4s ease-in-out 6s infinite;
+  --animate-sway: sway 3s ease-in-out infinite;
+  --animate-bike-cross: bike-travel 20s linear forwards, bike-drive 4s ease-in-out infinite;
 
   @keyframes floatSettle {
     /* Initial Flight from Bottom */
@@ -30,18 +30,18 @@
   }
 
   @keyframes sway {
-    0%, 100% { transform: translateX(-1vw) translateY(0) rotate(0deg); opacity: 0.8; }
-    50% { transform: translateX(-3vw) translateY(-2px) rotate(1.5deg); opacity: 0.8; }
+    0%, 100% { transform: translateX(-1vw) translateY(0) translateZ(0) rotate(0deg); opacity: 0.8; }
+    50% { transform: translateX(-1vw) translateY(-6px) translateZ(0) rotate(2deg); opacity: 0.8; }
   }
 
   @keyframes bike-travel {
-    0% { transform: translateX(0vw) scaleX(-1); opacity: 0; }
-    100% { transform: translateX(90vw) scaleX(-1); opacity: 0.75; }
+    0% { transform: translateX(0vw) scaleX(-1) translateZ(0); opacity: 0.7; }
+    100% { transform: translateX(45vw) scaleX(-1) translateZ(0); opacity: 0.8; }
   }
 
   @keyframes bike-drive {
-    0%, 100% { transform: translateX(90vw) scaleX(-1) translateY(0) rotate(0deg); opacity: 0.8; }
-    50% { transform: translateX(90vw) scaleX(-1) translateY(-4px) rotate(-2deg); opacity: 0.9; }
+    0%, 100% { transform: translateX(45vw) scaleX(-1) translateY(0) rotate(0deg); opacity: 0.8; }
+    50% { transform: translateX(45vw) scaleX(-1) translateY(-4px) rotate(-2deg); opacity: 0.8; }
   }
 }
 
