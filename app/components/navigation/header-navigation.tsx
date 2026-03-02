@@ -61,7 +61,7 @@ export default function HeaderNavigation() {
         </div>
         {/* Hamburger Icon */}
         <button
-          className="md:hidden flex flex-col gap-1.5 mr-0"
+          className="md:hidden flex flex-col gap-1.5 mr-2"
           onClick={() => setIsOpen(!isOpen)}
           type="button"
           aria-label={isOpen ? "close menu" : "open menu"}

@@ -4,7 +4,7 @@ import { cardDetails } from "../data/projectCardsData";
 
 export default function FullPortfolioPage() {
   return (
-    <main className="p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
+    <main className="p-4 bg-violet-100 min-h-[calc(100vh-9rem)]">
       <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
         <h1 className="logo-style text-3xl">Web projects</h1>
         {/* todo: certifications, skills, interests, about me */}
