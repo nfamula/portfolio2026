@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +10,7 @@ export default function HomePage() {
         alt="NF monogram logo"
         width={250}
         height={250}
+        style={{ width: "250px", height: "250px" }}
       />
       <h1 className="text-2xl text-center logo-style">
         <span>Natalie</span>
@@ -38,11 +40,12 @@ export default function HomePage() {
         </a>
       </div>
       <div className="hidden absolute lg:flex bottom-6 right-0 px-25">
-        <Image
+        <img //img is fine for SVG, no need for next/image optimization
           src="/images/airship.svg"
           alt="airship graphic"
           width={150}
           height={150}
+          style={{ height: "auto" }}
           className="animate-float"
         />
       </div>
@@ -54,19 +57,19 @@ export default function HomePage() {
         </p>
       </div>
       <div className="flex mt-8 justify-between gap-6 sm:flex-row flex-col items-center">
-        <Image
+        <img
           src="/images/skill-badges/JS-icons.svg"
           width={200}
           height={50}
           alt="Next.js, React.js, JavaScript, TypeScript"
         />
-        <Image
+        <img
           src="/images/skill-badges/CSS-icons.svg"
           width={100}
           height={50}
           alt="CSS and TailwindCSS"
         />
-        <Image
+        <img
           src="/images/skill-badges/deployment-icons.svg"
           width={200}
           height={50}

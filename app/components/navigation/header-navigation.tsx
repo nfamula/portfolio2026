@@ -16,6 +16,7 @@ export default function HeaderNavigation() {
               alt="NF monogram logo Natalie Famula"
               width={124}
               height={60}
+              style={{ width: "124px", height: "60px" }}
             />
           </Link>
           {/* Desktop Menu */}
