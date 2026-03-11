@@ -6,6 +6,7 @@ import {
 import Script from "next/script";
 import "./globals.css";
 import HeaderNavigation from "./components/navigation/header-navigation";
+import FooterNavigation from "./components/navigation/footer-navigation";
 
 export const baskervville = Baskervville({
   subsets: ["latin"],
@@ -81,30 +82,7 @@ export default function RootLayout({
         </noscript>
         <HeaderNavigation />
         <div id="app-root">{children}</div>
-        <footer className="bg-slate-900 text-white p-6">
-          <nav className="mx-auto flex flex-col md:flex-row md:gap-6 text-center md:text-left items-center md:items-start">
-            <p>© 2026</p>
-            <p>coded with next.js</p>
-            <p>
-              <a href="mailto:nfamula@gmail.com" className="hover:underline">
-                nfamula@gmail.com
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/nataliefamula/"
-                className="hover:underline"
-              >
-                LinkedIn
-              </a>
-            </p>
-            <p>
-              <a href="https://github.com/nfamula" className="hover:underline">
-                GitHub
-              </a>
-            </p>
-          </nav>
-        </footer>
+        <FooterNavigation />
       </body>
     </html>
   );

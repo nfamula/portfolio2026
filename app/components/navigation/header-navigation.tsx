@@ -27,6 +27,12 @@ export default function HeaderNavigation() {
                 download="NatalieFamula_Resume.pdf"
                 className="hover:underline"
                 aria-label="Download my resume"
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "resume_download",
+                    file_name: "NatalieFamula_Resume.pdf",
+                  });
+                }}
               >
                 Resume
               </a>
@@ -84,6 +90,12 @@ export default function HeaderNavigation() {
               href="/downloads/NatalieFamula_Resume.pdf"
               download="NatalieFamula_Resume.pdf"
               className="hover:underline"
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "resume_download",
+                  file_name: "NatalieFamula_Resume.pdf",
+                });
+              }}
             >
               Resume
             </a>

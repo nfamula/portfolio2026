@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
+import ResumeDownloadButton from "./components/navigation/resume-button";
 
 export default function HomePage() {
   return (
@@ -31,13 +32,7 @@ export default function HomePage() {
         >
           Explore my projects
         </Link>
-        <a
-          href="/downloads/NatalieFamula_Resume.pdf"
-          download="NatalieFamula_Resume.pdf"
-          className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
-        >
-          Download resume PDF
-        </a>
+        <ResumeDownloadButton />
       </div>
       <div className="hidden absolute lg:flex bottom-6 right-0 px-25">
         <img //img is fine for SVG, no need for next/image optimization
