@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactPageLinks from "../components/navigation/contact-page-links";
 
 export default function ContactPage() {
   return (
@@ -16,28 +17,7 @@ export default function ContactPage() {
       </h2>
       <hr className="border-t border-black my-6" />
       <div className="flex flex-col items-center">
-        <ul className="text-slate-900 text-lg list-inside text-center">
-          <li>
-            <a href="mailto:nfamula@gmail.com" className="hover:underline">
-              nfamula@gmail.com
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/nataliefamula/"
-              className="hover:underline"
-            >
-              linkedin.com/in/nataliefamula
-            </a>
-          </li>
-          <li>
-            GitHub:{" "}
-            <a href="https://github.com/nfamula" className="hover:underline">
-              @nfamula
-            </a>
-          </li>
-          <li>Located in Toronto, Canada 🇨🇦</li>
-        </ul>
+        <ContactPageLinks />
         <Image
           src="/images/shakinghands.svg"
           alt="handshake graphic"

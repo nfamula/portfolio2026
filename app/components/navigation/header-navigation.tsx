@@ -16,6 +16,7 @@ export default function HeaderNavigation() {
               alt="NF monogram logo Natalie Famula"
               width={124}
               height={60}
+              style={{ width: "124px", height: "60px" }}
             />
           </Link>
           {/* Desktop Menu */}
@@ -26,6 +27,12 @@ export default function HeaderNavigation() {
                 download="NatalieFamula_Resume.pdf"
                 className="hover:underline"
                 aria-label="Download my resume"
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "resume_download",
+                    file_name: "NatalieFamula_Resume.pdf",
+                  });
+                }}
               >
                 Resume
               </a>
@@ -83,6 +90,12 @@ export default function HeaderNavigation() {
               href="/downloads/NatalieFamula_Resume.pdf"
               download="NatalieFamula_Resume.pdf"
               className="hover:underline"
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "resume_download",
+                  file_name: "NatalieFamula_Resume.pdf",
+                });
+              }}
             >
               Resume
             </a>
