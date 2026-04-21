@@ -2,9 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Portfolio2026
 
-A Next.js + Tailwind CSS personal portfolio showcasing web development projects, professional experience, and my personal design taste. This project is designed for learning and inspiration, and you can use it as a reference.
-
-However, please don't pretend my projects were yours, and remove the screenshots and information about me.
+A Next.js portfolio project showcasing selected web development work and technical experience. Open for reference or adaptation for personal use.
 
 ## Features
 

@@ -17,13 +17,14 @@ export default function HomePage() {
         <span>Natalie</span>
         <span>Famula</span>
       </h1>
-      <p className="mt-10 text-lg max-w-xl justify-center text-center">
-        I&apos;m a senior developer with 10 years of experience in
-        Toronto&apos;s tech industry, frequently the main engineer behind
-        marketing websites. Experience across startups and large organizations
-        has taught me to value collaboration as much as clean, maintainable
-        code.
-      </p>
+      <div className="mt-10 max-w-xl text-md justify-center text-center">
+        <p>
+          Senior developer with 10 years of experience in Toronto’s tech
+          industry, often the primary engineer behind marketing websites. I
+          build web applications that are easy to extend, maintain, and operate
+          across teams and content-driven workflows.
+        </p>
+      </div>
       <div className="flex flex-col md:flex-row my-10 gap-6 justify-center text-center">
         <Link
           href="/full-portfolio"
@@ -34,7 +35,7 @@ export default function HomePage() {
         <ResumeDownloadButton />
       </div>
       <div className="flex mt-4 gap-6 justify-center">
-        <p className="text-center text-slate-700">
+        <p className="text-center text-sm text-slate-700">
           Built with <strong>Next.js & TypeScript</strong> styled with{" "}
           <strong>Tailwind CSS </strong>deployed on <strong>Vercel</strong> and
           hosted on <strong>GitHub</strong>
@@ -61,7 +62,7 @@ export default function HomePage() {
         />
       </div>
       <div className="flex my-8 gap-6 justify-center">
-        <p className="text-center text-slate-700">
+        <p className="text-center text-sm text-slate-700">
           <a
             href="https://github.com/nfamula/portfolio2026"
             target="_blank"
