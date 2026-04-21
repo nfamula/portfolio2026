@@ -6,7 +6,7 @@ export const cardDetails = [
     content: "Full-time developer role in EdTech.",
     projectLink: "https://www.prodigygame.com/main-en",
     badgesImage: "/images/skill-badges/prodigy-stack-icons.svg",
-    more: "I was brought on as the website was newly completed in 2020. I maintained a GitHub repo of Gatsby.js (React) components, AWS lambda middleware, Prismic CMS and became the primary developer for the project.\n\nI worked with UX designers to deliver features based on Figma designs, following the SCRUM agile framework and JIRA. I delivered self-serve tools to unblock the team, OneTrust integration, and ran a monthly lunch and learn program.\n\n In 2025, I supported the website migration to Webflow while maintaining the existing website. I also shipped a custom Shopify website for homeschooling parents. December 2020 - January 2026",
+    more: "I was brought on as the website was newly completed in 2020. I maintained a GitHub repo of Gatsby.js (React) components, AWS lambda middleware, Prismic CMS and became the primary developer for the project.\n\nI worked with UX designers to deliver features based on Figma designs, following the SCRUM agile framework and JIRA. I delivered self-serve tools to unblock the team, OneTrust integration, and ran a monthly lunch and learn program.\n\nIn 2025, I supported the website migration to Webflow while maintaining the existing website. I also shipped a custom Shopify website for homeschooling parents. December 2020 - January 2026",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const cardDetails = [
     projectLink: "https://whittenfamulamediations.com/",
     content: "Legal services project completed end-to-end.",
     badgesImage: "/images/skill-badges/wordpress-stack-icons.svg",
-    more: "Independent project for Wordpress website (PHP, HTML, CSS, JS) customization and implementation for legal services. SEO tools, plugins and training documentation provided. \n\n Completed January 2024.",
+    more: "Independent project delivering a custom WordPress website for a legal services client, including PHP, HTML, CSS, and JavaScript development. I handled full implementation and customization of the site, including SEO configuration, plugin integration, and client-facing documentation for ongoing updates.\n\nI continue to support the project through maintenance and a current migration to a new hosting environment.\n\nCompleted January 2024.",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const cardDetails = [
     screenshotBase: "financeit",
     content: "Full-time developer role in Fintech.",
     badgesImage: "/images/skill-badges/financeit-stack-icons.svg",
-    more: "Sole developer for digital marketing materials. I completed the WordPress build and shipped the website. Financeit.io is a custom WordPress theme based on unique designs. \n\n It contained over 150 pages, custom Salesforce integration, Pardot form handlers for drip email campaigns, and enterprise partner landing pages. \n\n I created a static microsite for an enterprise partnership, gated content landing pages, research for moving to headless CMS with Gatsby(React.js), contributed to an Ember.js app, and AODA accessibility testing. November 2018 - April 2020.",
+    more: "I was the primary developer responsible for a large-scale WordPress build for Financeit.io, a custom theme based on unique designs. The site included over 150 pages and required integration with Salesforce and Pardot for lead capture and automated email campaigns, along with enterprise partner landing pages.\n\nIn addition to core development, I built a static microsite for an enterprise partnership and implemented gated content experiences for marketing campaigns. I also contributed to early research into migrating the platform toward a headless CMS architecture using Gatsby (React) and supported development work within an Ember.js application.\n\nThe project also included accessibility improvements and AODA compliance testing across the site.\n\nNovember 2018 – April 2020",
   },
   {
     id: 4,

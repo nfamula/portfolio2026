@@ -34,10 +34,9 @@ export default function FullPortfolioPage() {
       <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
         <h1 className="logo-style text-3xl">Web projects</h1>
         <p className="text-slate-900 text-lg mb-6">
-          Here are some examples of published projects from my web development
-          career. I am always eager to take on new challenges and learn new
-          technologies. If you are interested in learning more or discussing
-          potential opportunities, please don&apos;t hesitate to reach out.
+          A selection of web development projects I&apos;ve built and shipped
+          across startup and enterprise environments, focused on CMS-driven
+          systems, platform reliability, and production web applications.
         </p>
 
         <Link
