@@ -5,11 +5,34 @@ import { cardDetails } from "../data/projectCardsData";
 
 export default function FullPortfolioPage() {
   return (
-    <main className="p-4 bg-violet-100 min-h-[calc(100vh-9rem)]">
-      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10 mt-6">
+    <main className="p-4 bg-striped min-h-[calc(100vh-9rem)]">
+      <div className="flex items-center justify-center">
+        <Image
+          src="/images/squiggle.svg"
+          alt="Squiggle decoration"
+          width={100}
+          height={50}
+          className="object-cover mx-4"
+        />
+        <Link href="/">
+          <Image
+            src="/images/NatalieFamula-allyMayChadwick2.jpg"
+            alt="Portrait of Natalie Famula"
+            width={100}
+            height={150}
+            className="rounded-t-full object-cover border border-black"
+          />
+        </Link>
+        <Image
+          src="/images/squiggle.svg"
+          alt="Squiggle decoration"
+          width={100}
+          height={50}
+          className="object-cover mx-4"
+        />
+      </div>
+      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
         <h1 className="logo-style text-3xl">Web projects</h1>
-        {/* todo: certifications, skills, interests, about me */}
-        {/* todo: blog: pull in from substack, pull in youtube videos */}
         <p className="text-slate-900 text-lg mb-6">
           Here are some examples of published projects from my web development
           career. I am always eager to take on new challenges and learn new

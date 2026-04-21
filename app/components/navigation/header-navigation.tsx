@@ -48,6 +48,15 @@ export default function HeaderNavigation() {
             </li>
             <li>
               <Link
+                href="/articles"
+                className="hover:underline"
+                aria-label="Read my articles"
+              >
+                Articles
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/about"
                 className="hover:underline"
                 aria-label="Learn more about me"
@@ -105,6 +114,13 @@ export default function HeaderNavigation() {
               aria-label="View my projects"
             >
               Projects
+            </Link>
+            <Link
+              href="/articles"
+              onClick={() => setIsOpen(false)}
+              aria-label="Read my articles"
+            >
+              Articles
             </Link>
             <Link
               href="/about"
