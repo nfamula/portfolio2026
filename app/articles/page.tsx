@@ -37,9 +37,8 @@ export default function ArticlesPage() {
           Series of case studies analyzing infrastructure and DevOps tooling
           decisions at Anthropic, covering topics including CI/CD pipeline
           architecture, continuous delivery tool selection, and multi-cloud
-          deployment strategies. Please Note: these analysis are based on
-          publicly available information. Published on OSF (Open Science
-          Framework).
+          deployment strategies. Please note: this analysis is based on publicly
+          available information. Published on OSF (Open Science Framework).
         </p>
         <div className="flex flex-wrap gap-4">
           <Link

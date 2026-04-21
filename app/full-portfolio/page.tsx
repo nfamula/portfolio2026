@@ -33,8 +33,6 @@ export default function FullPortfolioPage() {
       </div>
       <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
         <h1 className="logo-style text-3xl">Web projects</h1>
-        {/* todo: certifications, skills, interests, about me */}
-        {/* todo: blog: pull in from substack, pull in youtube videos */}
         <p className="text-slate-900 text-lg mb-6">
           Here are some examples of published projects from my web development
           career. I am always eager to take on new challenges and learn new

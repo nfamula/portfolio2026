@@ -1,4 +1,4 @@
-"use client"; //needed for lightbox
+"use client"; // Needed for lightbox.
 
 import { useState } from "react";
 import Link from "next/link";
@@ -96,7 +96,7 @@ export default function ProjectCard({
           onClick={() => setOpen(false)}
         >
           <div className="relative w-full max-w-[1000px] p-4">
-            {/* Collage gird lightbox layout */}
+            {/* Collage grid lightbox layout */}
             <div className="grid h-[90vh] gap-3 rounded-lg p-4 shadow-2xl grid-cols-1 md:grid-cols-[1fr_2fr_1fr] bg-stone-100">
               {/* Left */}
               <div className="relative overflow-hidden flex items-center justify-center max-h-[80vh]">
