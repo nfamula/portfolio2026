@@ -5,25 +5,24 @@ import ResumeDownloadButton from "./components/navigation/resume-button";
 
 export default function HomePage() {
   return (
-    <main className="bg-violet-100 text-slate-900 rounded-lg px-8 flex flex-col items-center min-h-[calc(100vh-9rem)]">
+    <main className="bg-violet-100 text-slate-900 rounded-lg px-8 pt-10 flex flex-col items-center min-h-[calc(100vh-9rem)]">
       <Image
-        src="/images/NF-border.png"
-        alt="NF monogram logo"
-        width={250}
-        height={250}
-        style={{ width: "250px", height: "250px" }}
+        src="/images/headshot_photographer-AllyChadwick.jpg"
+        alt="Natalie Famula"
+        width={175}
+        height={175}
+        className="rounded-full p-1 border-2 border-black shadow-lg mx-auto"
       />
       <h1 className="text-2xl text-center logo-style">
         <span>Natalie</span>
         <span>Famula</span>
       </h1>
       <p className="mt-10 text-lg max-w-xl justify-center text-center">
-        I build websites and tools that help projects succeed, with 10 years of
-        web development experience across various industries.
-        <span className="font-accent">
-          {" "}
-          Collaboration is as important as code.
-        </span>
+        I&apos;m a senior developer with 10 years of experience in
+        Toronto&apos;s tech industry, frequently the main engineer behind
+        marketing websites. Experience across startups and large organizations
+        has taught me to value collaboration as much as clean, maintainable
+        code.
       </p>
       <div className="flex flex-col md:flex-row my-10 gap-6 justify-center text-center">
         <Link
@@ -33,16 +32,6 @@ export default function HomePage() {
           Explore my projects
         </Link>
         <ResumeDownloadButton />
-      </div>
-      <div className="hidden absolute lg:flex bottom-6 right-0 px-25">
-        <img //img is fine for SVG, no need for next/image optimization
-          src="/images/airship.svg"
-          alt="airship graphic"
-          width={150}
-          height={150}
-          style={{ height: "auto" }}
-          className="animate-float"
-        />
       </div>
       <div className="flex mt-4 gap-6 justify-center">
         <p className="text-center text-slate-700">
