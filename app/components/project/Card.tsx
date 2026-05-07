@@ -47,7 +47,9 @@ export default function ProjectCard({
         />
       </div>
       <div>
-        <h2 className="text-xl font-heading p-4">{title}</h2>
+        <h2 className="font-[family-name:var(--font-accent)] italic text-xl p-4 pb-0">
+          {title}
+        </h2>
         <div className="my-4 px-4 flex opacity-90 grayscale-[0.2]">
           <Image
             src={badgesImage}
@@ -57,7 +59,9 @@ export default function ProjectCard({
             className="object-contain"
           />
         </div>
-        <p className="font-body px-4 text-sm">{content}</p>
+        <p className="font-[family-name:var(--font-body)] px-4 text-sm leading-relaxed text-slate-800 uppercase tracking-widest">
+          {content}
+        </p>
         {projectLink?.trim() ? (
           <Link
             href={projectLink}
@@ -80,7 +84,7 @@ export default function ProjectCard({
       </div>
       <div
         className="
-          mt-4 mb-4 text-slate-900 whitespace-pre-line px-4
+          mt-4 mb-4 text-slate-900 whitespace-pre-line px-4 font-[family-name:var(--font-body)] text-sm leading-relaxed
           overflow-auto
           max-h-full
           md:max-h-0 md:overflow-hidden md:group-hover:max-h-500
