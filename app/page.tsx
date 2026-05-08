@@ -170,10 +170,10 @@ export default function HomePage() {
           Email me
         </a>
       </section>
-      <Link href="/">
+      <Link href="/" aria-label="Home">
         <Image
           src="/images/NF-watermark.png"
-          alt="NF monogram watermark"
+          alt=""
           width={200}
           height={200}
           className="mx-auto py-4"
