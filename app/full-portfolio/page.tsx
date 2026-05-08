@@ -14,7 +14,7 @@ export default function FullPortfolioPage() {
           height={50}
           className="object-cover mx-4"
         />
-        <Link href="/">
+        <Link href="/" aria-label="Click to return to homepage">
           <Image
             src="/images/NatalieFamula-allyMayChadwick2.jpg"
             alt="Portrait of Natalie Famula"
@@ -61,7 +61,7 @@ export default function FullPortfolioPage() {
           />
         ))}
       </div>
-      <Link href="/">
+      <Link href="/" aria-label="Click to return to homepage">
         <Image
           src="/images/Natalie-Famula-floral-logo.png"
           alt="Natalie Famula floral logo"

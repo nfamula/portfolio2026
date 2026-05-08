@@ -15,7 +15,7 @@ export default function AboutPage() {
         <p className="logo-style text-xs tracking-[0.25em] text-slate-500 uppercase">
           Toronto · Remote{" "}
         </p>
-        <Link href="/">
+        <Link href="/" aria-label="Click to return to homepage">
           <Image
             src="/images/NatalieFamula-allyMayChadwick2.jpg"
             alt="Portrait of Natalie Famula"
@@ -149,7 +149,7 @@ export default function AboutPage() {
             Email me
           </a>
         </section>
-        <Link href="/">
+        <Link href="/" aria-label="Click to return to homepage">
           <Image
             src="/images/Natalie-Famula-floral-logo.png"
             alt="Natalie Famula floral logo"
