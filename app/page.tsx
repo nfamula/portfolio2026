@@ -141,7 +141,7 @@ export default function HomePage() {
         <p className="font-[family-name:var(--font-body)] text-slate-900 text-lg leading-relaxed">
           Effective collaboration is just as important to me as clean code. I
           enjoy solving technical problems, improving systems over time, and
-          helping teams ship confidently. Located in Toronto, I&apos;m availble
+          helping teams ship confidently. Located in Toronto, I&apos;m available
           for remote opportunities across time zones.
         </p>
         <Link
