@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ContactPageLinks from "../components/navigation/contact-page-links";
 
 export default function ContactPage() {
@@ -9,7 +10,7 @@ export default function ContactPage() {
         <p className="text-[10px] uppercase tracking-[0.35em] text-slate-600">
           Natalie Famula — Available for new projects.
         </p>
-        <h1 className="font-[family-name:var(--font-accent)] italic text-5xl sm:text-7xl text-slate-900 text-center leading-tight px-6">
+        <h1 className="font-accent italic text-5xl sm:text-7xl text-slate-900 text-center leading-tight px-6">
           Let&apos;s build your
           <br />
           website.
@@ -34,12 +35,32 @@ export default function ContactPage() {
           height={120}
           className="rounded-full p-1 border-2 border-black shadow-lg"
         />
-        <p className="font-[family-name:var(--font-body)] text-slate-900 text-lg leading-relaxed text-center max-w-md">
+        <p className="font-body text-slate-900 text-lg leading-relaxed text-center max-w-md">
           Send a message and I&apos;ll get back to you within 1&ndash;2 days.
         </p>
         <hr className="border-t border-slate-800 w-full max-w-sm" />
         <ContactPageLinks />
       </div>
+      <section className="w-full py-4 mb-6 flex flex-col gap-2">
+        <h3 className="logo-style text-center">
+          Available for freelance and contract projects.
+        </h3>
+        <a
+          href="mailto:nfamula@gmail.com"
+          className="bg-slate-900 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition self-center mt-4"
+        >
+          Email me
+        </a>
+      </section>
+      <Link href="/">
+        <Image
+          src="/images/NF-watermark.png"
+          alt="NF monogram watermark"
+          width={200}
+          height={200}
+          className="mx-auto py-4 mb-8"
+        />
+      </Link>
     </main>
   );
 }

@@ -5,13 +5,13 @@ import ResumeDownloadButton from "./components/navigation/resume-button";
 export default function HomePage() {
   return (
     <main className="bg-violet-100 text-slate-900 rounded-lg px-8 flex flex-col items-center min-h-[calc(100vh-9rem)]">
-      <div className="w-full max-w-6xl flex flex-col md:min-h-[calc(100vh-11rem)]">
-        <section className="w-full text-left pt-6">
+      <div className="w-full max-w-6xl flex flex-col">
+        <section className="w-full text-left pt-10 pb-4 md:pt-6 md:pb-0">
           <h1 className="leading-[0.82] uppercase -mb-4 w-fit mx-auto">
-            <span className="block text-[18vw] tracking-[-0.07em]">
+            <span className="block text-[18vw] xl:text-[230px] tracking-[-0.07em]">
               Natalie
             </span>
-            <span className="-mt-2 block text-[17vw] tracking-[-0.06em] pl-[8vw] sm:pl-20">
+            <span className="-mt-2 block text-[17vw] xl:text-[217px] tracking-[-0.06em] pl-[8vw] sm:pl-20">
               Famula
             </span>
           </h1>
@@ -19,7 +19,7 @@ export default function HomePage() {
             Senior Full-Stack Developer
           </p>
         </section>
-        <div className="flex flex-wrap gap-4 justify-center mt-4 mb-8 md:mt-auto">
+        <div className="flex flex-wrap gap-4 justify-center mt-4 mb-8">
           <Link
             href="/full-portfolio"
             className="bg-slate-900 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
@@ -29,8 +29,10 @@ export default function HomePage() {
           <ResumeDownloadButton />
         </div>
       </div>
-      <section className="w-full bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10 flex flex-col gap-6">
-        <h2 className="logo-style text-3xl">Professional experience</h2>
+      <section className="w-full bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-6 flex flex-col gap-6">
+        <h2 className="logo-style text-2xl sm:text-3xl">
+          Professional experience
+        </h2>
         <div className="flex flex-col sm:flex-row gap-8 items-start">
           <Image
             src="/images/headshot_photographer-AllyChadwick.jpg"
@@ -40,14 +42,14 @@ export default function HomePage() {
             className="rounded-full p-1 border-2 border-black shadow-lg shrink-0 mx-auto sm:mx-0"
           />
           <div>
-            <p className="font-[family-name:var(--font-body)] text-slate-900 text-lg leading-relaxed mb-6">
+            <p className="font-body text-slate-900 text-lg leading-relaxed mb-6">
               I&apos;m a Senior Full-Stack Developer with 10 years of experience
               building and maintaining high-traffic websites and digital
               platforms for businesses, startups, and growing teams. I help
               businesses launch reliable web platforms, improve performance,
               streamline deployments, and maintain systems with confidence.
             </p>
-            <p className="font-[family-name:var(--font-body)] text-slate-900 text-lg leading-relaxed mb-6">
+            <p className="font-body text-slate-900 text-lg leading-relaxed mb-6">
               Experienced across full-stack development, CMS platforms,
               third-party integrations, and infrastructure workflows, with a
               strong focus on long-term maintainability and operational
@@ -71,9 +73,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="w-full flex flex-col lg:flex-row gap-6 mb-10">
+      <div className="w-full flex flex-col lg:flex-row gap-6 mb-6">
         <section className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-6 md:p-7 flex flex-col gap-4 text-left shrink-0">
-          <h2 className="logo-style text-3xl">Services Available</h2>
+          <h2 className="logo-style text-2xl sm:text-3xl">
+            Services Available
+          </h2>
           <ul className="list-disc pl-6 text-slate-900 text-base space-y-1">
             <li>Scalable business websites</li>
             <li>Modern CMS platforms</li>
@@ -86,7 +90,7 @@ export default function HomePage() {
           </ul>
         </section>
         <section className="flex-1 min-w-0 bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-6 md:p-7 flex flex-col gap-4 text-left">
-          <h2 className="logo-style text-3xl">Selected Work</h2>
+          <h2 className="logo-style text-2xl sm:text-3xl">Selected Work</h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="flex-1 min-w-0">
               <div className="relative w-full h-48 mb-3">
@@ -97,7 +101,7 @@ export default function HomePage() {
                   className="rounded-md object-cover object-top"
                 />
               </div>
-              <h3 className="font-[family-name:var(--font-accent)] italic text-slate-900 text-lg">
+              <h3 className="font-accent italic text-slate-900 text-lg">
                 Prodigy Education
               </h3>
               <p className="text-slate-500 text-xs uppercase tracking-widest mt-1">
@@ -119,7 +123,7 @@ export default function HomePage() {
                   className="rounded-md object-cover object-top"
                 />
               </div>
-              <h3 className="font-[family-name:var(--font-accent)] italic text-slate-900 text-lg">
+              <h3 className="font-accent italic text-slate-900 text-lg">
                 Whitten &amp; Famula Mediations
               </h3>
               <p className="text-slate-500 text-xs uppercase tracking-widest mt-1">
@@ -136,9 +140,9 @@ export default function HomePage() {
         </section>
       </div>
 
-      <section className="w-full bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10 flex flex-col gap-4">
-        <h2 className="logo-style text-3xl">About Me</h2>
-        <p className="font-[family-name:var(--font-body)] text-slate-900 text-lg leading-relaxed">
+      <section className="w-full bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-6 flex flex-col gap-4">
+        <h2 className="logo-style text-2xl sm:text-3xl">About Me</h2>
+        <p className="font-body text-slate-900 text-lg leading-relaxed">
           Effective collaboration is just as important to me as clean code. I
           enjoy solving technical problems, improving systems over time, and
           helping teams ship confidently. Located in Toronto, I&apos;m available
@@ -152,8 +156,8 @@ export default function HomePage() {
         </Link>
       </section>
 
-      <section className="w-full py-4 mb-4 flex flex-col gap-2">
-        <h2 className="logo-style text-3xl text-center">
+      <section className="w-full py-4 mb-6 flex flex-col gap-2">
+        <h2 className="logo-style text-2xl sm:text-3xl text-center">
           Let&apos;s build your website!
         </h2>
         <h3 className="logo-style text-center">
@@ -166,13 +170,15 @@ export default function HomePage() {
           Email me
         </a>
       </section>
-      <Image
-        src="/images/NF-watermark.png"
-        alt="NF monogram watermark"
-        width={200}
-        height={200}
-        className="mx-auto py-4"
-      />
+      <Link href="/">
+        <Image
+          src="/images/NF-watermark.png"
+          alt="NF monogram watermark"
+          width={200}
+          height={200}
+          className="mx-auto py-4"
+        />
+      </Link>
       <hr className="w-full border-slate-300 my-8" />
       <div className="flex mt-4 gap-4 justify-center">
         <p className="text-center text-xs text-slate-700">
