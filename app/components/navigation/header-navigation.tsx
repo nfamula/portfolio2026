@@ -10,13 +10,16 @@ export default function HeaderNavigation() {
       <nav className="flex items-center gap-4 justify-between mx-auto pr-4 md:pr-0">
         {/* Logo */}
         <div className="flex items-center gap-8">
-          <Link href="/" className="pl-2 py-1">
+          <Link
+            href="/"
+            className="pl-2 py-1"
+            aria-label="Click to return to homepage"
+          >
             <Image
               src="/images/NF-logo-dark.png"
               alt="NF monogram logo Natalie Famula"
-              width={124}
-              height={60}
-              style={{ width: "124px", height: "60px" }}
+              width={115}
+              height={115}
             />
           </Link>
           {/* Desktop Menu */}

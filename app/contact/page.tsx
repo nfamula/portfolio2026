@@ -1,31 +1,66 @@
 import Image from "next/image";
+import Link from "next/link";
 import ContactPageLinks from "../components/navigation/contact-page-links";
 
 export default function ContactPage() {
   return (
-    <main className="p-10 bg-violet-100 min-h-[calc(100vh-9rem)]">
-      <Image
-        src="/images/headshot_photographer-AllyChadwick.jpg"
-        alt="Natalie Famula"
-        width={175}
-        height={175}
-        className="rounded-full p-1 border-2 border-black shadow-lg mx-auto"
-      />
-      <h1 className="text-4xl font-accent mb-8 text-center">Get in touch!</h1>
-      <h2 className="logo-style mb-6 text-center">
-        I&apos;d love to hear from you
-      </h2>
-      <hr className="border-t border-black my-6" />
-      <div className="flex flex-col items-center">
-        <ContactPageLinks />
-        <Image
-          src="/images/shakinghands.svg"
-          alt="handshake graphic"
-          width={150}
-          height={150}
-          className="animate-sway object-contain mx-auto mt-4"
-        />
+    <main className="bg-violet-100 min-h-[calc(100vh-9rem)] flex flex-col">
+      {/* Editorial hero band */}
+      <div className="bg-striped py-10 flex flex-col items-center gap-4 border-b border-slate-800">
+        <p className="text-[10px] uppercase tracking-[0.35em] text-slate-600">
+          Natalie Famula — Available for new projects.
+        </p>
+        <h1 className="font-accent italic text-5xl sm:text-7xl text-slate-900 text-center leading-tight px-6">
+          Let&apos;s build your
+          <br />
+          website.
+        </h1>
+        <p className="logo-style text-xs tracking-[0.25em] text-slate-500 uppercase">
+          Toronto · Remote{" "}
+        </p>
+        <a
+          href="mailto:nfamula@gmail.com"
+          className="mt-2 bg-slate-900 text-slate-50 px-8 py-3 rounded-md hover:opacity-90 transition"
+        >
+          Email me
+        </a>
       </div>
+
+      {/* Content */}
+      <div className="flex flex-col items-center gap-8 py-12 px-8">
+        <Image
+          src="/images/headshot_photographer-AllyChadwick.jpg"
+          alt="Natalie Famula"
+          width={120}
+          height={120}
+          className="rounded-full p-1 border-2 border-black shadow-lg"
+        />
+        <p className="font-body text-slate-900 text-lg leading-relaxed text-center max-w-md">
+          Send a message and I&apos;ll get back to you within 1&ndash;2 days.
+        </p>
+        <hr className="border-t border-slate-800 w-full max-w-sm" />
+        <ContactPageLinks />
+      </div>
+      <section className="w-full py-4 mb-6 flex flex-col gap-2">
+        <h3 className="logo-style text-center">
+          Available for freelance and contract projects.
+        </h3>
+        <a
+          href="mailto:nfamula@gmail.com"
+          className="bg-slate-900 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition self-center mt-4"
+        >
+          Email me
+        </a>
+      </section>
+      <Link href="/" aria-label="Home">
+        <Image
+          src="/images/NF-watermark.png"
+          alt="NF monogram watermark"
+          width={200}
+          height={200}
+          className="mx-auto py-4 mb-8"
+        />
+      </Link>
     </main>
   );
 }

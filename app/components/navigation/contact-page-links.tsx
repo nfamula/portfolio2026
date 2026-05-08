@@ -49,7 +49,7 @@ export default function ContactPageLinks() {
           @nfamula
         </a>
       </li>
-      <li>Located in Toronto, Canada 🇨🇦</li>
+      <li>Toronto, Canada 🇨🇦</li>
     </ul>
   );
 }
