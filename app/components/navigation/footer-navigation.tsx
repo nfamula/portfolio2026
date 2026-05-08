@@ -3,7 +3,7 @@
 export default function FooterNavigation() {
   return (
     <footer className="bg-slate-900 text-white p-6">
-      <nav className="mx-auto text-sm flex flex-col md:flex-row md:gap-6 text-center items-center justify-center">
+      <nav className="mx-auto text-sm flex flex-col md:flex-row md:gap-6 text-left items-center justify-start">
         <p>© 2026</p>
         <p>
           <a

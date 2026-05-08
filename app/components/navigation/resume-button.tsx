@@ -4,7 +4,7 @@ export default function ResumeDownloadButton() {
     <a
       href="/downloads/NatalieFamula_Resume.pdf"
       download="NatalieFamula_Resume.pdf"
-      className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
+      className="bg-slate-900 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
       onClick={() => {
         window.dataLayer?.push({
           event: "resume_download",

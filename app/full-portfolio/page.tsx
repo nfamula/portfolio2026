@@ -32,8 +32,10 @@ export default function FullPortfolioPage() {
         />
       </div>
       <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
-        <h1 className="logo-style text-3xl">Web projects</h1>
-        <p className="text-slate-900 text-lg mb-6">
+        <h1 className="logo-style text-3xl border-b border-slate-800 pb-2 mb-4">
+          Web projects
+        </h1>
+        <p className="font-[family-name:var(--font-body)] text-slate-900 text-lg leading-relaxed mb-6">
           A selection of web development projects I&apos;ve built and shipped
           across startup and enterprise environments, focused on CMS-driven
           systems, platform reliability, and production web applications.
@@ -41,7 +43,7 @@ export default function FullPortfolioPage() {
 
         <Link
           href="/contact"
-          className="bg-slate-700 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
+          className="bg-slate-900 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition"
         >
           Contact me
         </Link>
