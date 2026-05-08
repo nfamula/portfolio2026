@@ -47,9 +47,7 @@ export default function ProjectCard({
         />
       </div>
       <div>
-        <h2 className="font-[family-name:var(--font-accent)] italic text-xl p-4 pb-0">
-          {title}
-        </h2>
+        <h2 className="font-accent italic text-xl p-4 pb-0">{title}</h2>
         <div className="my-4 px-4 flex opacity-90 grayscale-[0.2]">
           <Image
             src={badgesImage}
@@ -59,7 +57,7 @@ export default function ProjectCard({
             className="object-contain"
           />
         </div>
-        <p className="font-[family-name:var(--font-body)] px-4 text-sm leading-relaxed text-slate-800 uppercase tracking-widest">
+        <p className="font-body px-4 text-sm leading-relaxed text-slate-800 uppercase tracking-widest">
           {content}
         </p>
         {projectLink?.trim() ? (
@@ -84,7 +82,7 @@ export default function ProjectCard({
       </div>
       <div
         className="
-          mt-4 mb-4 text-slate-900 whitespace-pre-line px-4 font-[family-name:var(--font-body)] text-sm leading-relaxed
+          mt-4 mb-4 text-slate-900 whitespace-pre-line px-4 font-body text-sm leading-relaxed
           overflow-auto
           max-h-full
           md:max-h-0 md:overflow-hidden md:group-hover:max-h-500
@@ -148,13 +146,15 @@ export default function ProjectCard({
           </div>
           {/* watermark */}
           <div className="absolute bottom-2 right-2 pointer-events-none m-2">
-            <Image
-              src="/images/NF-watermark.png"
-              alt="Natalie Famula watermark"
-              width={206}
-              height={250}
-              className="object-contain rounded-full opacity-60 shadow-lg"
-            />
+            <Link href="/" aria-label="Home" className="pointer-events-auto">
+              <Image
+                src="/images/NF-watermark.png"
+                alt="Natalie Famula watermark"
+                width={206}
+                height={250}
+                className="object-contain rounded-full opacity-60 shadow-lg"
+              />
+            </Link>
           </div>
         </div>
       )}

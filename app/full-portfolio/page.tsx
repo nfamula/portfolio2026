@@ -14,7 +14,7 @@ export default function FullPortfolioPage() {
           height={50}
           className="object-cover mx-4"
         />
-        <Link href="/">
+        <Link href="/" aria-label="Click to return to homepage">
           <Image
             src="/images/NatalieFamula-allyMayChadwick2.jpg"
             alt="Portrait of Natalie Famula"
@@ -31,11 +31,11 @@ export default function FullPortfolioPage() {
           className="object-cover mx-4"
         />
       </div>
-      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-10">
+      <div className="bg-stone-100 border border-gray-200 rounded-lg shadow-[0_4px_10px_rgba(15,23,43,0.05)] p-8 mb-6">
         <h1 className="logo-style text-3xl border-b border-slate-800 pb-2 mb-4">
           Web projects
         </h1>
-        <p className="font-[family-name:var(--font-body)] text-slate-900 text-lg leading-relaxed mb-6">
+        <p className="font-body text-slate-900 text-lg leading-relaxed mb-6">
           A selection of web development projects I&apos;ve built and shipped
           across startup and enterprise environments, focused on CMS-driven
           systems, platform reliability, and production web applications.
@@ -48,7 +48,7 @@ export default function FullPortfolioPage() {
           Contact me
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         {cardDetails.map((projectCardData) => (
           <ProjectCard
             key={projectCardData.id}
@@ -61,7 +61,7 @@ export default function FullPortfolioPage() {
           />
         ))}
       </div>
-      <Link href="/">
+      <Link href="/" aria-label="Click to return to homepage">
         <Image
           src="/images/Natalie-Famula-floral-logo.png"
           alt="Natalie Famula floral logo"
@@ -70,6 +70,20 @@ export default function FullPortfolioPage() {
           className="object-cover rounded-xl mx-auto mb-10"
         />
       </Link>
+      <section className="w-full py-4 mb-6 flex flex-col gap-2">
+        <h2 className="logo-style text-2xl sm:text-3xl text-center">
+          Let&apos;s build your website!
+        </h2>
+        <h3 className="logo-style text-center">
+          Available for freelance and contract projects.
+        </h3>
+        <a
+          href="mailto:nfamula@gmail.com"
+          className="bg-slate-900 text-slate-50 px-6 py-3 rounded-md hover:opacity-90 transition self-center mt-4"
+        >
+          Email me
+        </a>
+      </section>
       <Image
         src="/images/Bike.svg"
         alt="bicycle graphic"

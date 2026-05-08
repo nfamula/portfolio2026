@@ -6,7 +6,7 @@ export default function NotFound() {
       <h1 className="text-6xl font-bold text-center text-red-600">404</h1>
       <p className="text-center text-black text-lg">Oops! Page not found.</p>
 
-      <Link href="/">
+      <Link href="/" aria-label="Click to return to homepage">
         <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
           Back to Homepage
         </button>
