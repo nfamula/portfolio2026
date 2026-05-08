@@ -146,7 +146,7 @@ export default function ProjectCard({
           </div>
           {/* watermark */}
           <div className="absolute bottom-2 right-2 pointer-events-none m-2">
-            <Link href="/" className="pointer-events-auto">
+            <Link href="/" aria-label="Home" className="pointer-events-auto">
               <Image
                 src="/images/NF-watermark.png"
                 alt="Natalie Famula watermark"
