@@ -52,7 +52,7 @@ export default function ContactPage() {
           Email me
         </a>
       </section>
-      <Link href="/">
+      <Link href="/" aria-label="Home">
         <Image
           src="/images/NF-watermark.png"
           alt="NF monogram watermark"
